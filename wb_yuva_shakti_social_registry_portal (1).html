@@ -1,0 +1,2721 @@
+<<<<<<< SEARCH
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>West Bengal Yuva Shakti Yojana & Social Registry Portal | পশ্চিমবঙ্গ যুব শক্তি প্রকল্প</title>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Government of West Bengal | Family Level Data Collection Portal & Yuva Shakti Yojana (socialregistry.wb.gov.in)</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Google Fonts: Inter, Merriweather (for exact screenshot serif headings), & Noto Sans Bengali -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@700;900&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            wbSaffron: '#D87A22',
+            wbTopOrange: '#F48120',
+            wbTopGreen: '#1A871C',
+            wbNavy: '#143B5D',
+            wbCharcoal: '#1A1A1A',
+            wbSubtleGrey: '#555555'
+          },
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans Bengali', 'sans-serif'],
+            serif: ['Merriweather', 'Georgia', 'serif'],
+            bengali: ['Noto Sans Bengali', 'Inter', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', 'Noto Sans Bengali', sans-serif;
+      background-color: #1e1b18;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    /* Exact Top Tricolor Strip from Screenshot */
+    .tricolor-bar {
+      height: 6px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .tricolor-saffron { background-color: #F48120; }
+    .tricolor-white { background-color: #FFFFFF; }
+    .tricolor-green { background-color: #1A871C; }
+
+    /* Main Title matching GOVERNMENT OF WEST BENGAL in screenshot */
+    .gov-main-title {
+      color: #D87A22;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      line-height: 1.24;
+      text-transform: uppercase;
+    }
+
+    /* Hero Background: Golden Sunset Howrah Bridge & Kolkata Heritage Backdrop */
+    .howrah-sunset-backdrop {
+      position: relative;
+      background:
+        linear-gradient(180deg,
+          rgba(235, 168, 92, 0.35) 0%,
+          rgba(166, 118, 76, 0.45) 40%,
+          rgba(68, 58, 46, 0.72) 100%),
+        url('https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1600&q=85') center top / cover no-repeat fixed;
+      min-height: calc(100vh - 230px);
+    }
+
+    /* Frosted Glassmorphism Card Replicating Screenshot */
+    .portal-glass-card {
+      position: relative;
+      background: rgba(246, 243, 238, 0.78);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      box-shadow: 0 20px 45px rgba(15, 15, 15, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.85);
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .portal-glass-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 26px 55px rgba(15, 15, 15, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+    }
+
+    /* Subtle translucent circular watermark in top-right of each glass card (visible in screenshot) */
+    .portal-glass-card::after {
+      content: "";
+      position: absolute;
+      top: -28px;
+      right: -28px;
+      width: 175px;
+      height: 175px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(145, 145, 140, 0.16) 0%, rgba(145, 145, 140, 0.04) 70%, transparent 100%);
+      pointer-events: none;
+    }
+
+    /* Icon Box Styles Matching Screenshot */
+    .icon-box-citizen {
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      background: rgba(216, 122, 34, 0.13);
+      border: 1px solid rgba(216, 122, 34, 0.28);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6);
+    }
+    .icon-box-admin {
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      background: rgba(20, 59, 93, 0.11);
+      border: 1px solid rgba(20, 59, 93, 0.24);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6);
+    }
+    .icon-box-enroll {
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      background: rgba(26, 135, 28, 0.12);
+      border: 1px solid rgba(26, 135, 28, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6);
+    }
+
+    /* Frosted Card Divider */
+    .glass-divider {
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    /* Justified Clean Description Text Matching Screenshot */
+    .card-body-copy {
+      color: #2B2B2B;
+      font-size: 1.04rem;
+      line-height: 1.58;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    /* White Action Pill Button inside Glass Card */
+    .glass-action-btn {
+      background: #FFFFFF;
+      border-radius: 14px;
+      padding: 15px 20px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 0.98rem;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+      transition: all 0.2s ease;
+    }
+    .glass-action-btn:hover {
+      background: #FFFDF9;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      transform: translateY(-1px);
+    }
+
+    /* Smart Card Gradient */
+    .bharosa-card-gradient {
+      background: linear-gradient(135deg, #143B5D 0%, #1e4e79 55%, #D87A22 100%);
+    }
+
+    /* Classic Indian Railways / ECL / Sarkari Portal Blinking Oval-Starburst "NEW" Badge */
+    @keyframes sarkariNewBlinkPolygon {
+      0%, 49% {
+        fill: #e60000;
+        stroke: #ffff00;
+      }
+      50%, 100% {
+        fill: #ffee00;
+        stroke: #cc0000;
+      }
+    }
+    @keyframes sarkariNewBlinkText {
+      0%, 49% {
+        fill: #ffff00;
+      }
+      50%, 100% {
+        fill: #cc0000;
+      }
+    }
+    @keyframes sarkariNewPulse {
+      0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 2px 6px rgba(220, 0, 0, 0.55));
+      }
+      50% {
+        transform: scale(1.08);
+        filter: drop-shadow(0 2px 9px rgba(255, 195, 0, 0.85));
+      }
+    }
+    .sarkari-new-star-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+      user-select: none;
+      animation: sarkariNewPulse 0.9s infinite ease-in-out;
+    }
+    .sarkari-new-star-badge polygon {
+      stroke-width: 3;
+      stroke-linejoin: round;
+      animation: sarkariNewBlinkPolygon 0.65s infinite steps(1);
+    }
+    .sarkari-new-star-badge text {
+      font-family: 'Inter', 'Arial Black', sans-serif;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      animation: sarkariNewBlinkText 0.65s infinite steps(1);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #f1f1f1; }
+    ::-webkit-scrollbar-thumb { background: #D87A22; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #b66114; }
+
+    /* Print Media Query */
+    @media print {
+      body * { visibility: hidden !important; }
+      #printableArea, #printableArea * { visibility: visible !important; }
+      #printableArea {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+        box-shadow: none !important;
+      }
+      .no-print { display: none !important; }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- ================= 1. TOP TRICOLOR BAR (EXACT SCREENSHOT MATCH) ================= -->
+  <div class="tricolor-bar sticky top-0 z-50 no-print">
+    <div class="tricolor-saffron"></div>
+    <div class="tricolor-white"></div>
+    <div class="tricolor-green"></div>
+  </div>
+
+  <!-- ================= 2. OFFICIAL WHITE EMBLEM HEADER (EXACT SCREENSHOT MATCH) ================= -->
+  <header class="bg-white text-center pt-6 pb-6 px-4 relative z-30 shadow-sm no-print">
+    <div class="max-w-3xl mx-auto flex flex-col items-center">
+
+      <!-- Official Seal of West Bengal (Single-click: Home | Triple-click: Discreet Admin Gateway) -->
+      <div class="flex flex-col items-center cursor-pointer select-none group" onclick="handleOfficialSealClick()" title="Government of West Bengal">
+        <img
+          src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Seal_of_West_Bengal.svg/1280px-Seal_of_West_Bengal.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+          onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Seal_of_West_Bengal.svg/500px-Seal_of_West_Bengal.svg.png';"
+          alt="Official Seal of Government of West Bengal"
+          class="h-[82px] sm:h-[88px] w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+        />
+      </div>
+
+      <!-- Main Saffron Heading (GOVERNMENT OF WEST BENGAL) -->
+      <h1 class="gov-main-title text-2xl sm:text-3xl font-extrabold mt-3.5 cursor-pointer" onclick="navigatePortal('landing')">
+        GOVERNMENT OF<br />WEST BENGAL
+      </h1>
+
+      <!-- Subtitle (Family Level Data Collection Portal) -->
+      <p class="text-[#555555] text-base sm:text-lg font-normal mt-1.5 tracking-normal">
+        Family Level Data Collection Portal
+      </p>
+
+      <!-- Clean Public Navigation Bar (No Admin Info Exposed) -->
+      <div class="mt-4 pt-3 border-t border-neutral-100 flex flex-wrap items-center justify-center gap-2 text-xs">
+        <div class="flex items-center gap-1.5 pr-2 mr-1 border-r border-neutral-200 cursor-pointer" onclick="navigatePortal('landing')" title="Government of West Bengal">
+          <img
+            src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Seal_of_West_Bengal.svg/1280px-Seal_of_West_Bengal.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+            onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Seal_of_West_Bengal.svg/500px-Seal_of_West_Bengal.svg.png';"
+            alt="WB Crest"
+            class="w-7 h-7 object-contain"
+          />
+          <span class="font-bold text-neutral-700 hidden sm:inline">WB Social Registry</span>
+        </div>
+        <button onclick="navigatePortal('landing')" id="pill-landing" class="px-3 py-1.5 rounded-full font-semibold transition bg-amber-100 text-[#D87A22] border border-amber-300 flex items-center gap-1.5">
+          <i class="fa-solid fa-house"></i> Portal Home
+        </button>
+        <button onclick="navigatePortal('citizen')" id="pill-citizen" class="px-3 py-1.5 rounded-full font-semibold transition bg-neutral-100 text-neutral-700 hover:bg-amber-50 hover:text-[#D87A22] flex items-center gap-1.5">
+          <i class="fa-solid fa-user"></i> Citizen / Family Login
+        </button>
+        <button onclick="openNewRegistrationDirect()" id="pill-apply" class="px-3 py-1.5 rounded-full font-semibold transition bg-neutral-100 text-neutral-700 hover:bg-emerald-50 hover:text-[#1A871C] flex items-center gap-1.5">
+          <i class="fa-solid fa-file-circle-plus"></i>
+          <span>Yuva Shakti &amp; Family Apply</span>
+          <!-- Compact Blinking Oval-Starburst NEW Badge in Top Bar -->
+          <svg class="sarkari-new-star-badge w-10 h-5 shrink-0" viewBox="0 0 120 52" xmlns="http://www.w3.org/2000/svg" aria-label="NEW">
+            <polygon points="117,26 104.6,28.2 115.1,32.2 101.6,32.5 109.4,38 95.7,36.4 100.3,43 87.4,39.5 88.5,46.8 77.2,41.7 74.8,49.2 65.9,42.9 60,50 54.1,42.9 45.2,49.2 42.8,41.7 31.5,46.8 32.6,39.5 19.7,43 24.3,36.4 10.6,38 18.4,32.5 4.9,32.2 15.4,28.2 3,26 15.4,23.8 4.9,19.8 18.4,19.5 10.6,14 24.3,15.6 19.7,9 32.6,12.5 31.5,5.2 42.8,10.3 45.2,2.8 54.1,9.1 60,2 65.9,9.1 74.8,2.8 77.2,10.3 88.5,5.2 87.4,12.5 100.3,9 95.7,15.6 109.4,14 101.6,19.5 115.1,19.8 104.6,23.8" />
+            <text x="60" y="33" text-anchor="middle" font-size="22">NEW</text>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 3. MAIN HOWRAH BRIDGE SUNSET BACKDROP & PORTAL VIEWS ================= -->
+  <main class="howrah-sunset-backdrop flex-grow relative py-8 sm:py-12 px-4 sm:px-6 no-print">
+
+    <!-- Decorative SVG Howrah Bridge Cantilever Silhouette Overlay (Guarantees authentic Kolkata sunset look even offline) -->
+    <div class="pointer-events-none fixed inset-x-0 top-52 opacity-25 z-0 overflow-hidden flex justify-center">
+      <svg class="w-full max-w-6xl h-64 text-stone-900" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 240L240 40L320 40L440 150L760 150L880 40L960 40L1100 240" stroke="currentColor" stroke-width="6"/>
+        <path d="M240 40V240M320 40V240M880 40V240M960 40V240" stroke="currentColor" stroke-width="8"/>
+        <path d="M50 220H1150" stroke="currentColor" stroke-width="7"/>
+        <path d="M240 100L320 160M320 100L240 160M880 100L960 160M960 100L880 160" stroke="currentColor" stroke-width="4"/>
+        <path d="M360 120V220M400 135V220M440 150V220M480 150V220M520 150V220M560 150V220M600 150V220M640 150V220M680 150V220M720 150V220M760 150V220M800 135V220M840 120V220" stroke="currentColor" stroke-width="3"/>
+      </svg>
+    </div>
+
+    <!-- =========================================================================
+         VIEW 1: OFFICIAL LANDING VIEW (FAITHFUL SCREENSHOT CARDS)
+    ========================================================================== -->
+    <section id="view-landing" class="relative z-10 max-w-[430px] mx-auto space-y-7">
+
+      <!-- CARD 1: CITIZEN / FAMILY LOGIN (EXACT MATCH TO TOP CARD IN SCREENSHOT) -->
+      <div class="portal-glass-card p-7 sm:p-8">
+        <!-- Top Rounded Square Icon Box -->
+        <div class="icon-box-citizen mb-6">
+          <div class="w-8 h-8 rounded-full bg-[#D87A22] text-white flex items-center justify-center text-sm shadow-sm">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+
+        <!-- Uppercase Tag -->
+        <div class="text-[#D87A22] text-xs font-bold uppercase tracking-widest mb-1.5">
+          PUBLIC ACCESS
+        </div>
+
+        <!-- Bold Serif Heading -->
+        <h2 class="font-serif text-2xl sm:text-[26px] font-black text-[#1A1A1A] leading-snug mb-6">
+          Citizen / Family Login
+        </h2>
+
+        <!-- Subtle Divider -->
+        <div class="glass-divider my-5"></div>
+
+        <!-- Justified Body Copy Matching Screenshot -->
+        <p class="card-body-copy my-6">
+          Citizens can check their application status and file claim grievances. Login with your applied mobile number and OTP.
+        </p>
+
+        <!-- Subtle Divider -->
+        <div class="glass-divider my-5"></div>
+
+        <!-- White Action Button -->
+        <button onclick="navigatePortal('citizen')" class="glass-action-btn text-[#D87A22] mt-2">
+          <span>Access Citizen Portal</span>
+          <i class="fa-solid fa-arrow-right text-sm"></i>
+        </button>
+      </div>
+
+      <!-- CARD 2: ADMINISTRATIVE LOGIN (EXACT MATCH TO BOTTOM CARD IN SCREENSHOT) -->
+      <div class="portal-glass-card p-7 sm:p-8">
+        <!-- Top Rounded Square Icon Box with Dark Navy Hierarchy Icon -->
+        <div class="icon-box-admin mb-6">
+          <i class="fa-solid fa-sitemap text-[#143B5D] text-2xl"></i>
+        </div>
+
+        <!-- Uppercase Tag -->
+        <div class="text-[#143B5D] text-xs font-bold uppercase tracking-widest mb-1.5">
+          OFFICIAL ACCESS
+        </div>
+
+        <!-- Bold Serif Heading -->
+        <h2 class="font-serif text-2xl sm:text-[26px] font-black text-[#1A1A1A] leading-snug mb-6">
+          Administrative Login
+        </h2>
+
+        <!-- Subtle Divider -->
+        <div class="glass-divider my-5"></div>
+
+        <!-- Body Copy -->
+        <p class="card-body-copy my-6">
+          Authorized BDO, SDO, Municipality and State Nodal Officers can verify family level data, approve Yuva Shakti claims, and resolve citizen grievances.
+        </p>
+
+        <!-- Subtle Divider -->
+        <div class="glass-divider my-5"></div>
+
+        <!-- White Action Button -->
+        <button onclick="navigatePortal('admin')" class="glass-action-btn text-[#143B5D] mt-2">
+          <span>Access Admin Portal</span>
+          <i class="fa-solid fa-arrow-right text-sm"></i>
+        </button>
+      </div>
+
+      <!-- CARD 3: NEW FAMILY REGISTRY & YUVA SHAKTI YOJANA ONLINE ENROLLMENT -->
+      <div class="portal-glass-card p-7 sm:p-8">
+        <div class="flex items-center justify-between mb-6">
+          <div class="icon-box-enroll">
+            <i class="fa-solid fa-file-signature text-[#1A871C] text-2xl"></i>
+          </div>
+          <div class="flex items-center gap-2">
+            <!-- Sarkari / Railways / ECL Style Blinking Oval-Starburst NEW Icon -->
+            <svg class="sarkari-new-star-badge w-14 h-7 shrink-0" viewBox="0 0 120 52" xmlns="http://www.w3.org/2000/svg" aria-label="NEW">
+              <polygon points="117,26 104.6,28.2 115.1,32.2 101.6,32.5 109.4,38 95.7,36.4 100.3,43 87.4,39.5 88.5,46.8 77.2,41.7 74.8,49.2 65.9,42.9 60,50 54.1,42.9 45.2,49.2 42.8,41.7 31.5,46.8 32.6,39.5 19.7,43 24.3,36.4 10.6,38 18.4,32.5 4.9,32.2 15.4,28.2 3,26 15.4,23.8 4.9,19.8 18.4,19.5 10.6,14 24.3,15.6 19.7,9 32.6,12.5 31.5,5.2 42.8,10.3 45.2,2.8 54.1,9.1 60,2 65.9,9.1 74.8,2.8 77.2,10.3 88.5,5.2 87.4,12.5 100.3,9 95.7,15.6 109.4,14 101.6,19.5 115.1,19.8 104.6,23.8" />
+              <text x="60" y="33" text-anchor="middle" font-size="22">NEW</text>
+            </svg>
+            <span class="bg-amber-500/20 border border-amber-600/30 text-amber-950 text-[11px] font-extrabold px-3 py-1 rounded-full">
+              ₹3,000 / ₹2,000 DBT
+            </span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 mb-1.5">
+          <span class="text-[#1A871C] text-xs font-bold uppercase tracking-widest">
+            NEW ENROLLMENT 2026–27
+          </span>
+          <!-- Blinking Oval-Starburst NEW Badge right beside NEW ENROLLMENT 2026-27 -->
+          <svg class="sarkari-new-star-badge w-12 h-6 shrink-0" viewBox="0 0 120 52" xmlns="http://www.w3.org/2000/svg" aria-label="NEW">
+            <polygon points="117,26 104.6,28.2 115.1,32.2 101.6,32.5 109.4,38 95.7,36.4 100.3,43 87.4,39.5 88.5,46.8 77.2,41.7 74.8,49.2 65.9,42.9 60,50 54.1,42.9 45.2,49.2 42.8,41.7 31.5,46.8 32.6,39.5 19.7,43 24.3,36.4 10.6,38 18.4,32.5 4.9,32.2 15.4,28.2 3,26 15.4,23.8 4.9,19.8 18.4,19.5 10.6,14 24.3,15.6 19.7,9 32.6,12.5 31.5,5.2 42.8,10.3 45.2,2.8 54.1,9.1 60,2 65.9,9.1 74.8,2.8 77.2,10.3 88.5,5.2 87.4,12.5 100.3,9 95.7,15.6 109.4,14 101.6,19.5 115.1,19.8 104.6,23.8" />
+            <text x="60" y="33" text-anchor="middle" font-size="22">NEW</text>
+          </svg>
+        </div>
+
+        <h2 class="font-serif text-2xl sm:text-[25px] font-black text-[#1A1A1A] leading-snug mb-6 flex flex-wrap items-center gap-2.5">
+          <span>Yuva Shakti &amp; Family Apply</span>
+          <svg class="sarkari-new-star-badge w-13 h-6 shrink-0" viewBox="0 0 120 52" xmlns="http://www.w3.org/2000/svg" aria-label="NEW">
+            <polygon points="117,26 104.6,28.2 115.1,32.2 101.6,32.5 109.4,38 95.7,36.4 100.3,43 87.4,39.5 88.5,46.8 77.2,41.7 74.8,49.2 65.9,42.9 60,50 54.1,42.9 45.2,49.2 42.8,41.7 31.5,46.8 32.6,39.5 19.7,43 24.3,36.4 10.6,38 18.4,32.5 4.9,32.2 15.4,28.2 3,26 15.4,23.8 4.9,19.8 18.4,19.5 10.6,14 24.3,15.6 19.7,9 32.6,12.5 31.5,5.2 42.8,10.3 45.2,2.8 54.1,9.1 60,2 65.9,9.1 74.8,2.8 77.2,10.3 88.5,5.2 87.4,12.5 100.3,9 95.7,15.6 109.4,14 101.6,19.5 115.1,19.8 104.6,23.8" />
+            <text x="60" y="33" text-anchor="middle" font-size="22">NEW</text>
+          </svg>
+        </h2>
+
+        <div class="glass-divider my-5"></div>
+
+        <p class="card-body-copy my-6">
+          Register your family data in the State Social Registry and apply online for West Bengal Yuva Shakti Yojana (Bhorsha Karmasuchi) monthly assistance.
+        </p>
+
+        <div class="glass-divider my-5"></div>
+
+        <button onclick="openNewRegistrationDirect()" class="glass-action-btn text-[#1A871C] mt-2">
+          <span>Start New Application</span>
+          <i class="fa-solid fa-arrow-right text-sm"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 2: CITIZEN / FAMILY PORTAL (LOGIN + STATUS + 6-SECTION APPLY + GRIEVANCE)
+    ========================================================================== -->
+    <section id="view-citizen" class="hidden relative z-10 max-w-5xl mx-auto space-y-6">
+
+      <!-- STEP A: CITIZEN MOBILE + OTP LOGIN CARD (MATCHING FROSTED THEME) -->
+      <div id="citizenLoginGate" class="max-w-md mx-auto portal-glass-card p-7 sm:p-8">
+        <div class="flex items-center justify-between mb-5">
+          <div class="icon-box-citizen">
+            <div class="w-8 h-8 rounded-full bg-[#D87A22] text-white flex items-center justify-center text-sm">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+          </div>
+          <button onclick="navigatePortal('landing')" class="text-xs font-semibold text-neutral-600 hover:text-neutral-900 bg-white/70 px-3 py-1.5 rounded-full border border-white">
+            <i class="fa-solid fa-arrow-left"></i> Back
+          </button>
+        </div>
+
+        <div class="text-[#D87A22] text-xs font-bold uppercase tracking-widest mb-1">
+          PUBLIC ACCESS • SOCIAL REGISTRY
+        </div>
+        <h2 class="font-serif text-2xl font-black text-[#1A1A1A] mb-2">
+          Citizen / Family Login
+        </h2>
+        <p class="text-xs text-neutral-600 mb-5">
+          Select your West Bengal District and enter your applied 10-digit mobile number to receive a verification OTP.
+        </p>
+
+        <div class="space-y-4">
+          <div>
+            <label class="block text-xs font-bold text-neutral-700 mb-1">Select District (জেলা) <span class="text-rose-600">*</span></label>
+            <select id="citLoginDistrict" class="w-full rounded-xl border border-neutral-300 bg-white px-3.5 py-2.5 text-sm font-medium focus:ring-2 focus:ring-[#D87A22] focus:outline-none">
+              <!-- Populated dynamically -->
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-neutral-700 mb-1">Applied Mobile Number <span class="text-rose-600">*</span></label>
+            <div class="flex gap-2">
+              <div class="relative flex-grow">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-neutral-500 text-xs font-bold">+91</span>
+                <input type="text" id="citLoginMobile" maxlength="10" autocomplete="off" placeholder="Enter 10-Digit Mobile" class="w-full pl-11 pr-3 py-2.5 rounded-xl border border-neutral-300 bg-white text-sm font-mono font-bold focus:ring-2 focus:ring-[#D87A22] focus:outline-none" />
+              </div>
+              <button type="button" onclick="sendCitizenPortalOtp()" class="bg-[#D87A22] hover:bg-amber-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow transition shrink-0">
+                Get OTP
+              </button>
+            </div>
+          </div>
+
+          <!-- Simulated OTP Box -->
+          <div id="citOtpBox" class="hidden space-y-3 pt-2 border-t border-neutral-300/70">
+            <div class="bg-emerald-950 text-emerald-100 rounded-xl p-3 text-xs flex items-center justify-between">
+              <span><i class="fa-solid fa-comment-sms text-amber-400"></i> SMS OTP Code: <strong id="citGeneratedOtpText" class="text-amber-300 font-mono text-sm underline">----</strong></span>
+            </div>
+
+            <div class="flex gap-2">
+              <input type="text" id="citOtpInput" maxlength="4" autocomplete="off" placeholder="Enter 4-Digit OTP" class="flex-grow rounded-xl border border-neutral-300 bg-white px-3.5 py-2.5 text-sm font-mono font-bold text-center tracking-widest focus:ring-2 focus:ring-emerald-600 focus:outline-none" />
+              <button type="button" onclick="verifyCitizenPortalOtp(false)" class="bg-[#1A871C] hover:bg-emerald-800 text-white font-bold text-xs px-5 py-2.5 rounded-xl shadow transition">
+                Verify &amp; Login →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP B: CITIZEN DASHBOARD WORKSPACE (UNLOCKED AFTER OTP OR DIRECT APPLY) -->
+      <div id="citizenDashboardWorkspace" class="hidden space-y-6">
+
+        <!-- Citizen Top Welcome Bar -->
+        <div class="portal-glass-card p-5 sm:p-6 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+          <div class="flex items-center gap-3.5">
+            <div class="w-14 h-14 rounded-2xl bg-white border border-amber-200 p-1.5 flex items-center justify-center shadow-sm shrink-0">
+              <img
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Seal_of_West_Bengal.svg/1280px-Seal_of_West_Bengal.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Seal_of_West_Bengal.svg/500px-Seal_of_West_Bengal.svg.png';"
+                alt="WB Seal"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <div>
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="text-[11px] font-extrabold uppercase tracking-wider text-[#D87A22]">Citizen / Family Portal</span>
+                <span id="loggedCitizenPhoneBadge" class="bg-emerald-100 text-emerald-800 border border-emerald-300 text-[11px] font-mono font-bold px-2.5 py-0.5 rounded-full">
+                  <i class="fa-solid fa-circle-check"></i> Verified Citizen Session
+                </span>
+              </div>
+              <h2 class="font-serif text-xl sm:text-2xl font-black text-[#1A1A1A] mt-0.5">
+                Family Level Data Collection &amp; Yuva Shakti Desk
+              </h2>
+            </div>
+          </div>
+
+          <!-- Sub-Navigation Tabs inside Citizen Portal -->
+          <div class="flex flex-wrap items-center gap-2">
+            <button onclick="switchCitizenSubTab('status')" id="csub-status" class="px-4 py-2.5 rounded-xl text-xs font-bold transition bg-[#D87A22] text-white shadow flex items-center gap-1.5">
+              <i class="fa-solid fa-magnifying-glass-chart"></i> Check Status &amp; Card
+            </button>
+            <button onclick="switchCitizenSubTab('apply')" id="csub-apply" class="px-4 py-2.5 rounded-xl text-xs font-bold transition bg-white text-neutral-800 hover:bg-amber-50 flex items-center gap-1.5">
+              <i class="fa-solid fa-file-pen"></i> 6-Section Family &amp; Yuva Shakti Form
+            </button>
+            <button onclick="switchCitizenSubTab('grievance')" id="csub-grievance" class="px-4 py-2.5 rounded-xl text-xs font-bold transition bg-white text-neutral-800 hover:bg-amber-50 flex items-center gap-1.5">
+              <i class="fa-solid fa-headset"></i> File Claim Grievance
+            </button>
+            <button onclick="logoutCitizenPortal()" class="px-3 py-2.5 rounded-xl text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200 hover:bg-rose-100 transition" title="Logout Citizen Session">
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- ===============================================================
+             CITIZEN SUB-TAB 1: CHECK APPLICATION STATUS & DOWNLOAD CARDS
+        ================================================================ -->
+        <div id="cit-sub-status" class="space-y-6">
+          <div class="portal-glass-card p-6">
+            <h3 class="font-serif text-lg sm:text-xl font-black text-[#1A1A1A]">
+              Check Application Status &amp; Download Yuva Shakti Bharosa Card
+            </h3>
+            <p class="text-xs sm:text-sm text-neutral-600 mt-1">
+              Enter your Application ID, registered 10-Digit Mobile Number, or 12-Digit Aadhaar Number to view your verification status and download your card.
+            </p>
+
+            <!-- Search Bar -->
+            <div class="mt-4 flex flex-col sm:flex-row gap-2.5">
+              <div class="relative flex-grow">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-3.5 text-neutral-400"></i>
+                <input type="text" id="trackSearchInput" autocomplete="off" placeholder="Enter Application ID, Mobile Number, or Aadhaar Number..." class="w-full pl-11 pr-4 py-3 rounded-xl border border-neutral-300 bg-white text-sm font-semibold focus:ring-2 focus:ring-[#D87A22] focus:outline-none" onkeydown="if(event.key==='Enter') searchApplicationStatus()" />
+              </div>
+              <button onclick="searchApplicationStatus()" class="bg-[#D87A22] hover:bg-amber-700 text-white font-bold px-6 py-3 rounded-xl shadow transition flex items-center justify-center gap-2 text-sm shrink-0">
+                <i class="fa-solid fa-arrow-right"></i> Check Status
+              </button>
+            </div>
+          </div>
+
+          <!-- Dynamic Status Result Container -->
+          <div id="trackResultContainer" class="space-y-6"></div>
+        </div>
+
+        <!-- ===============================================================
+             CITIZEN SUB-TAB 2: 6-SECTION FAMILY REGISTRY & YUVA SHAKTI FORM
+        ================================================================ -->
+        <div id="cit-sub-apply" class="hidden space-y-6">
+          <div class="portal-glass-card p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-[#1A871C]">State Social Registry • 6-Section Form</span>
+              <h3 class="font-serif text-xl font-black text-[#1A1A1A] mt-0.5">
+                Family Level Data Collection &amp; Yuva Shakti Application
+              </h3>
+              <p class="text-xs text-neutral-600 mt-0.5">
+                Graduates &amp; Post-Graduates: <strong>₹3,000/month</strong> | Other Eligible Youth (10th/12th/ITI/Diploma): <strong>₹2,000/month</strong> (Age: 21–45 Yrs, Family Income &lt; ₹1 Lakh/Yr)
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 shrink-0">
+              <button type="button" onclick="resetApplicationForm()" class="bg-white hover:bg-neutral-100 text-neutral-700 border border-neutral-300 text-xs font-bold px-4 py-2.5 rounded-xl transition">
+                <i class="fa-solid fa-eraser"></i> Clear Form
+              </button>
+            </div>
+          </div>
+
+          <form id="yuvaShaktiForm" onsubmit="handleApplicationSubmit(event)" class="space-y-6">
+
+            <!-- SECTION 1: BASIC FAMILY & APPLICANT INFORMATION -->
+            <div class="bg-white/95 backdrop-blur rounded-3xl shadow-md border border-white p-6">
+              <div class="flex items-center justify-between border-b border-neutral-200 pb-3 mb-4">
+                <h4 class="font-serif font-bold text-base sm:text-lg text-[#1A1A1A] flex items-center gap-2">
+                  <span class="w-7 h-7 rounded-lg bg-[#D87A22] text-white text-xs font-sans font-extrabold flex items-center justify-center">1</span>
+                  Basic Info &amp; Permanent Domicile (West Bengal)
+                </h4>
+                <span class="text-xs text-neutral-500">Section 1 of 6</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">Applicant Full Name (As per Aadhaar) <span class="text-rose-600">*</span></label>
+                  <input type="text" id="appName" required placeholder="e.g. Subhajit Chatterjee" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm focus:ring-2 focus:ring-[#D87A22] focus:outline-none" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">Father's / Mother's / Family Head Name <span class="text-rose-600">*</span></label>
+                  <input type="text" id="appGuardian" required placeholder="e.g. Tapan Kumar Chatterjee" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm focus:ring-2 focus:ring-[#D87A22] focus:outline-none" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">10-Digit Mobile Number <span class="text-rose-600">*</span></label>
+                  <input type="text" id="appMobile" required maxlength="10" placeholder="e.g. 9832145670" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm font-mono font-bold focus:ring-2 focus:ring-[#D87A22] focus:outline-none" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">Date of Birth (21–45 Years) <span class="text-rose-600">*</span></label>
+                  <input type="date" id="appDob" required onchange="validateFormAge()" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm focus:ring-2 focus:ring-[#D87A22] focus:outline-none" />
+                  <div id="ageValidationBadge" class="mt-1 text-[11px] font-semibold text-neutral-500">Select DOB to verify 21–45 yrs age limit</div>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <div>
+                    <label class="block text-xs font-bold text-neutral-700 mb-1">Gender <span class="text-rose-600">*</span></label>
+                    <select id="appGender" required class="w-full rounded-xl border border-neutral-300 px-3 py-2 text-sm bg-white">
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-neutral-700 mb-1">Category <span class="text-rose-600">*</span></label>
+                    <select id="appCategory" required class="w-full rounded-xl border border-neutral-300 px-3 py-2 text-sm bg-white">
+                      <option value="General">General</option>
+                      <option value="SC">SC</option>
+                      <option value="ST">ST</option>
+                      <option value="OBC-A">OBC-A</option>
+                      <option value="OBC-B">OBC-B</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">District (জেলা) <span class="text-rose-600">*</span></label>
+                  <select id="appDistrict" required onchange="populateBlocksForDistrict('appDistrict', 'appBlock')" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm font-semibold bg-white"></select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">Block / Municipality / Municipal Corp <span class="text-rose-600">*</span></label>
+                  <select id="appBlock" required class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm bg-white"></select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">Gram Panchayat / Ward No. <span class="text-rose-600">*</span></label>
+                  <input type="text" id="appWard" required placeholder="e.g. Ward No. 14 / Kanksa GP" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">PIN Code (6 Digits) <span class="text-rose-600">*</span></label>
+                  <input type="text" id="appPin" required maxlength="6" pattern="\d{6}" placeholder="e.g. 713213" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm font-mono" />
+                </div>
+                <div class="sm:col-span-2 lg:col-span-3">
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">Full Residential Address (House/Village/Street/Post Office) <span class="text-rose-600">*</span></label>
+                  <input type="text" id="appAddress" required placeholder="Enter complete West Bengal permanent address" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm" />
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 2 & 3: RATION CARD, FAMILY MEMBERS, ASSETS & ANNUAL INCOME -->
+            <div class="bg-white/95 backdrop-blur rounded-3xl shadow-md border border-white p-6">
+              <div class="flex items-center justify-between border-b border-neutral-200 pb-3 mb-4">
+                <h4 class="font-serif font-bold text-base sm:text-lg text-[#1A1A1A] flex items-center gap-2">
+                  <span class="w-7 h-7 rounded-lg bg-[#D87A22] text-white text-xs font-sans font-extrabold flex items-center justify-center">2</span>
+                  Ration Card, Family Assets &amp; Annual Income Details
+                </h4>
+                <span class="text-xs text-neutral-500">Sections 2 &amp; 3 of 6</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">Ration Card Category <span class="text-rose-600">*</span></label>
+                  <select id="appRationType" required class="w-full rounded-xl border border-neutral-300 px-3 py-2 text-sm bg-white">
+                    <option value="RKSY-I">RKSY-I (Khadya Sathi)</option>
+                    <option value="RKSY-II">RKSY-II</option>
+                    <option value="PHH">PHH</option>
+                    <option value="SPHH">SPHH</option>
+                    <option value="AAY">AAY (Antyodaya)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">Digital Ration Card No. <span class="text-rose-600">*</span></label>
+                  <input type="text" id="appRationNo" required placeholder="e.g. RKSY1-1904882310" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm font-mono uppercase" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">Total Family Members <span class="text-rose-600">*</span></label>
+                  <input type="number" id="appFamilyCount" required min="1" max="20" value="4" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">Annual Family Income (₹) <span class="text-rose-600">*</span></label>
+                  <input type="number" id="appIncome" required min="1000" max="99999" oninput="validateFormIncome()" placeholder="Max ₹99,999" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm font-bold" />
+                  <p id="incomeValidationMsg" class="text-[11px] text-neutral-500 mt-1">Must be below ₹1,00,000/year</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 4: EDUCATIONAL QUALIFICATION & YUVA SHAKTI TIER -->
+            <div class="bg-white/95 backdrop-blur rounded-3xl shadow-md border border-white p-6">
+              <div class="flex items-center justify-between border-b border-neutral-200 pb-3 mb-4">
+                <h4 class="font-serif font-bold text-base sm:text-lg text-[#1A1A1A] flex items-center gap-2">
+                  <span class="w-7 h-7 rounded-lg bg-[#D87A22] text-white text-xs font-sans font-extrabold flex items-center justify-center">3</span>
+                  Educational Qualification &amp; Yuva Shakti Monthly Benefit Tier
+                </h4>
+                <span class="text-xs text-neutral-500">Section 4 of 6</span>
+              </div>
+
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+                <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold text-neutral-700 mb-1">Highest Educational Qualification <span class="text-rose-600">*</span></label>
+                    <select id="appQualification" required onchange="updateFormStipendPreview()" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm font-bold bg-white">
+                      <option value="Graduate (BA/BSc/BCom/BTech/etc.)">Graduate (BA/BSc/BCom/BTech/etc.)</option>
+                      <option value="Post Graduate & Above">Post Graduate &amp; Above</option>
+                      <option value="Higher Secondary (12th)">Higher Secondary (12th)</option>
+                      <option value="ITI / Polytechnic Diploma">ITI / Polytechnic Diploma</option>
+                      <option value="Madhyamik (10th)">Madhyamik (10th)</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-neutral-700 mb-1">Board / Council / University <span class="text-rose-600">*</span></label>
+                    <input type="text" id="appUniversity" required placeholder="e.g. Kazi Nazrul University / Calcutta Univ" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-neutral-700 mb-1">Year of Passing <span class="text-rose-600">*</span></label>
+                    <input type="number" id="appPassYear" required min="1995" max="2026" value="2022" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-neutral-700 mb-1">Employment Bank Reg. No. (If any)</label>
+                    <input type="text" id="appEmpBank" placeholder="e.g. EB2024WB88412" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm font-mono uppercase" />
+                  </div>
+                </div>
+
+                <!-- Dynamic Stipend Preview Box -->
+                <div class="lg:col-span-4">
+                  <div class="bharosa-card-gradient rounded-2xl p-5 text-white shadow-md">
+                    <span id="stipendTierBadge" class="bg-white text-[#143B5D] text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase">
+                      Graduate Tier-I
+                    </span>
+                    <div class="text-xs text-amber-100 mt-2">Monthly Yuva Shakti Allowance:</div>
+                    <div id="stipendMonthlyText" class="text-3xl font-black mt-0.5">₹3,000 <span class="text-sm font-normal">/ Month</span></div>
+                    <div id="stipendAnnualText" class="text-xs font-semibold text-amber-200 mt-1">₹36,000 / Year via NPCI DBT</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 5 & 6: IDENTITY DOCUMENTS, BANK DBT & SELF-DECLARATION -->
+            <div class="bg-white/95 backdrop-blur rounded-3xl shadow-md border border-white p-6">
+              <div class="flex items-center justify-between border-b border-neutral-200 pb-3 mb-4">
+                <h4 class="font-serif font-bold text-base sm:text-lg text-[#1A1A1A] flex items-center gap-2">
+                  <span class="w-7 h-7 rounded-lg bg-[#D87A22] text-white text-xs font-sans font-extrabold flex items-center justify-center">4</span>
+                  Identity Documents, Aadhaar-Seeded Bank Account &amp; Declaration
+                </h4>
+                <span class="text-xs text-neutral-500">Sections 5 &amp; 6 of 6</span>
+              </div>
+
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                <div class="lg:col-span-8 space-y-4">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label class="block text-xs font-bold text-neutral-700 mb-1">12-Digit Aadhaar Number <span class="text-rose-600">*</span></label>
+                      <input type="text" id="appAadhaar" required maxlength="12" pattern="\d{12}" placeholder="12-digit Aadhaar No." class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm font-mono" />
+                    </div>
+                    <div>
+                      <label class="block text-xs font-bold text-neutral-700 mb-1">Voter EPIC Card Number <span class="text-rose-600">*</span></label>
+                      <input type="text" id="appEpic" required maxlength="14" placeholder="e.g. WB1912845891" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm font-mono uppercase" />
+                    </div>
+                    <div>
+                      <label class="block text-xs font-bold text-neutral-700 mb-1">Bank Name <span class="text-rose-600">*</span></label>
+                      <select id="appBankName" required class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm bg-white">
+                        <option value="State Bank of India (SBI)">State Bank of India (SBI)</option>
+                        <option value="Punjab National Bank (PNB)">Punjab National Bank (PNB)</option>
+                        <option value="UCO Bank">UCO Bank</option>
+                        <option value="Bandhan Bank">Bandhan Bank</option>
+                        <option value="Bank of Baroda">Bank of Baroda</option>
+                        <option value="Canara Bank">Canara Bank</option>
+                        <option value="Indian Bank">Indian Bank</option>
+                        <option value="Paschim Banga Gramin Bank">Paschim Banga Gramin Bank</option>
+                        <option value="HDFC Bank">HDFC Bank</option>
+                        <option value="Axis Bank">Axis Bank</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label class="block text-xs font-bold text-neutral-700 mb-1">Branch Name <span class="text-rose-600">*</span></label>
+                      <input type="text" id="appBranch" required placeholder="e.g. Durgapur City Centre Branch" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm" />
+                    </div>
+                    <div>
+                      <label class="block text-xs font-bold text-neutral-700 mb-1">IFSC Code <span class="text-rose-600">*</span></label>
+                      <input type="text" id="appIfsc" required maxlength="11" oninput="this.value=this.value.toUpperCase()" placeholder="e.g. SBIN0009042" class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm font-mono uppercase" />
+                    </div>
+                    <div>
+                      <label class="block text-xs font-bold text-neutral-700 mb-1">Bank Account Number <span class="text-rose-600">*</span></label>
+                      <input type="text" id="appAccountNo" required maxlength="18" placeholder="Enter Single-Holder A/C No." class="w-full rounded-xl border border-neutral-300 px-3.5 py-2 text-sm font-mono" />
+                    </div>
+                  </div>
+
+                  <div class="bg-amber-50/80 border border-amber-200 rounded-2xl p-4 space-y-2 text-xs text-neutral-800">
+                    <label class="flex items-start gap-2.5 cursor-pointer">
+                      <input type="checkbox" required checked class="mt-0.5 w-4 h-4 accent-[#D87A22]" />
+                      <span>I confirm that my bank account is linked with Aadhaar and mapped on the <strong>NPCI DBT Server</strong>.</span>
+                    </label>
+                    <label class="flex items-start gap-2.5 cursor-pointer">
+                      <input type="checkbox" required checked class="mt-0.5 w-4 h-4 accent-[#D87A22]" />
+                      <span><strong>Self-Declaration:</strong> I hereby declare that I am an unemployed permanent resident of West Bengal, aged 21–45 years, with annual family income below ₹1,00,000, and not receiving allowance from another State social security scheme.</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Passport Photo Upload -->
+                <div class="lg:col-span-4 flex flex-col items-center justify-center bg-neutral-50 border-2 border-dashed border-neutral-300 rounded-2xl p-4 text-center">
+                  <div class="w-28 h-32 rounded-xl overflow-hidden bg-white border border-neutral-300 shadow-sm flex items-center justify-center mb-3">
+                    <img id="photoPreviewImg" src="" alt="Preview" class="hidden w-full h-full object-cover" />
+                    <div id="photoPlaceholder" class="text-neutral-400 flex flex-col items-center">
+                      <i class="fa-solid fa-user-circle text-4xl text-[#D87A22]"></i>
+                      <span class="text-[10px] mt-1 font-semibold">Applicant Photo</span>
+                    </div>
+                  </div>
+                  <label class="cursor-pointer bg-[#143B5D] hover:bg-slate-800 text-white text-xs font-bold px-4 py-2 rounded-xl shadow transition inline-flex items-center gap-1.5">
+                    <i class="fa-solid fa-camera"></i> Upload Photo
+                    <input type="file" id="appPhotoInput" accept="image/*" onchange="handlePhotoUpload(event)" class="hidden" />
+                  </label>
+                  <p class="text-[11px] text-neutral-500 mt-2">Optional: Official avatar auto-generated if skipped.</p>
+                </div>
+              </div>
+
+              <div class="mt-6 pt-4 border-t border-neutral-200 flex flex-wrap items-center justify-between gap-4">
+                <span class="text-xs text-neutral-500"><i class="fa-solid fa-database text-[#1A871C]"></i> Saved in Browser Storage &amp; BDO Verification Queue</span>
+                <button type="submit" class="bg-[#1A871C] hover:bg-emerald-800 text-white font-extrabold px-6 py-3 rounded-xl shadow-lg transition flex items-center gap-2 text-sm">
+                  <i class="fa-solid fa-paper-plane"></i> Submit Family &amp; Yuva Shakti Application
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- ===============================================================
+             CITIZEN SUB-TAB 3: FILE CLAIM GRIEVANCE (FROM SCREENSHOT COPY)
+        ================================================================ -->
+        <div id="cit-sub-grievance" class="hidden space-y-6">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <!-- Submit New Claim Grievance Form -->
+            <div class="lg:col-span-5 portal-glass-card p-6">
+              <div class="text-[#D87A22] text-xs font-bold uppercase tracking-widest mb-1">
+                PUBLIC GRIEVANCE REDRESSAL
+              </div>
+              <h3 class="font-serif text-xl font-black text-[#1A1A1A] mb-2">
+                File a Claim Grievance
+              </h3>
+              <p class="text-xs text-neutral-600 mb-4">
+                Facing issues with your Family Level Data Collection or Yuva Shakti DBT payment? Submit a claim grievance directly to your BDO / SDO Nodal Desk.
+              </p>
+
+              <form onsubmit="handleGrievanceSubmit(event)" class="space-y-3.5">
+                <div>
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">Application ID or Mobile No. <span class="text-rose-600">*</span></label>
+                  <input type="text" id="grvAppRef" required placeholder="e.g. WBYS-2026-10423 or 9832145670" class="w-full rounded-xl border border-neutral-300 bg-white px-3.5 py-2 text-sm font-mono font-bold" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">Citizen Name <span class="text-rose-600">*</span></label>
+                  <input type="text" id="grvName" required placeholder="Your Full Name" class="w-full rounded-xl border border-neutral-300 bg-white px-3.5 py-2 text-sm" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">Grievance Category <span class="text-rose-600">*</span></label>
+                  <select id="grvCategory" required class="w-full rounded-xl border border-neutral-300 bg-white px-3.5 py-2 text-sm">
+                    <option value="Stipend Tier Mismatch (₹2,000 vs ₹3,000 Graduate)">Stipend Tier Mismatch (₹2,000 vs ₹3,000 Graduate)</option>
+                    <option value="NPCI / Bank DBT Payment Pending">NPCI / Bank DBT Payment Pending</option>
+                    <option value="Family Member / Ration Card Correction">Family Member / Ration Card Correction</option>
+                    <option value="Re-verification of Rejected Claim">Re-verification of Rejected Claim</option>
+                    <option value="Name / Aadhaar / DOB Spelling Correction">Name / Aadhaar / DOB Spelling Correction</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-neutral-700 mb-1">Detailed Grievance Description <span class="text-rose-600">*</span></label>
+                  <textarea id="grvMessage" required rows="3" placeholder="Describe your claim issue clearly for the BDO Verifying Officer..." class="w-full rounded-xl border border-neutral-300 bg-white px-3.5 py-2 text-sm"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-[#D87A22] hover:bg-amber-700 text-white font-bold py-3 rounded-xl shadow transition text-sm flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-paper-plane"></i> Submit Claim Grievance
+                </button>
+              </form>
+            </div>
+
+            <!-- Live Grievance History & Official Resolution Status -->
+            <div class="lg:col-span-7 portal-glass-card p-6 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between border-b border-neutral-300/70 pb-3 mb-4">
+                  <div>
+                    <h3 class="font-serif text-lg font-black text-[#1A1A1A]">Submitted Claim Grievances &amp; Official Replies</h3>
+                    <p class="text-xs text-neutral-600">Real-time updates from BDO / SDO Administrative Portal</p>
+                  </div>
+                  <span id="citGrievanceCountBadge" class="bg-[#143B5D] text-white text-xs font-bold px-3 py-1 rounded-full">0 Tickets</span>
+                </div>
+                <div id="citizenGrievanceList" class="space-y-3 max-h-[420px] overflow-y-auto pr-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 3: ADMINISTRATIVE LOGIN & BDO/SDO NODAL DASHBOARD
+    ========================================================================== -->
+    <section id="view-admin" class="hidden relative z-10 max-w-6xl mx-auto space-y-6">
+
+      <!-- ADMIN LOGIN CARD (CLEAN OFFICIAL GATEWAY - NO HINTS OR DEMO INFO) -->
+      <div id="adminLoginView" class="max-w-md mx-auto portal-glass-card p-7 sm:p-8">
+        <div class="flex items-center justify-between mb-5">
+          <div class="icon-box-admin">
+            <i class="fa-solid fa-sitemap text-[#143B5D] text-2xl"></i>
+          </div>
+          <button onclick="navigatePortal('landing')" class="text-xs font-semibold text-neutral-600 hover:text-neutral-900 bg-white/70 px-3 py-1.5 rounded-full border border-white">
+            <i class="fa-solid fa-arrow-left"></i> Back
+          </button>
+        </div>
+
+        <div class="text-[#143B5D] text-xs font-bold uppercase tracking-widest mb-1">
+          OFFICIAL ACCESS • NODAL DESK
+        </div>
+        <h2 class="font-serif text-2xl font-black text-[#1A1A1A] mb-2">
+          Administrative Login
+        </h2>
+        <p class="text-xs text-neutral-600 mb-5">
+          Authorized BDO, SDO, Municipal and State Nodal Officers only. Please sign in with your official credentials.
+        </p>
+
+        <form onsubmit="handleAdminLogin(event)" autocomplete="off" class="space-y-4">
+          <div>
+            <label class="block text-xs font-bold text-neutral-700 mb-1">Officer Role / Jurisdiction</label>
+            <select id="adminRoleSelect" class="w-full rounded-xl border border-neutral-300 bg-white px-3.5 py-2.5 text-sm font-semibold focus:ring-2 focus:ring-[#143B5D] focus:outline-none">
+              <option value="BDO / Municipal Verifying Officer">BDO / Municipal Verifying Officer</option>
+              <option value="SDO / Sub-Divisional Nodal Officer">SDO / Sub-Divisional Nodal Officer</option>
+              <option value="District Magistrate / State Registry Admin">District Magistrate / State Registry Admin</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-neutral-700 mb-1">Official User ID <span class="text-rose-600">*</span></label>
+            <input type="text" id="adminUser" required autocomplete="off" spellcheck="false" placeholder="Enter Official User ID" class="w-full rounded-xl border border-neutral-300 bg-white px-3.5 py-2.5 text-sm font-mono font-bold focus:ring-2 focus:ring-[#143B5D] focus:outline-none" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-neutral-700 mb-1">Password <span class="text-rose-600">*</span></label>
+            <input type="password" id="adminPass" required autocomplete="new-password" placeholder="Enter Password" class="w-full rounded-xl border border-neutral-300 bg-white px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-[#143B5D] focus:outline-none" />
+          </div>
+          <button type="submit" class="glass-action-btn text-[#143B5D] mt-2">
+            <span>Login to Administrative Console</span>
+            <i class="fa-solid fa-arrow-right text-sm"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- ADMIN DASHBOARD VIEW (UNLOCKED ONLY AFTER VALID CREDENTIALS) -->
+      <div id="adminDashboardView" class="hidden space-y-6">
+
+        <!-- Admin Header Bar -->
+        <div class="portal-glass-card p-5 sm:p-6 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+          <div class="flex items-center gap-3.5">
+            <div class="w-14 h-14 rounded-2xl bg-white border border-sky-200 p-1.5 flex items-center justify-center shadow-sm shrink-0">
+              <img
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Seal_of_West_Bengal.svg/1280px-Seal_of_West_Bengal.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Seal_of_West_Bengal.svg/500px-Seal_of_West_Bengal.svg.png';"
+                alt="WB Seal"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="bg-emerald-100 text-emerald-800 border border-emerald-300 text-[11px] font-bold px-2.5 py-0.5 rounded-full">● Nodal Session Active</span>
+                <span id="adminActiveRoleBadge" class="text-xs text-neutral-600 font-semibold">BDO / Municipal Verifying Officer</span>
+              </div>
+              <h2 class="font-serif text-xl sm:text-2xl font-black text-[#1A1A1A] mt-0.5">
+                State Social Registry &amp; Yuva Shakti Verification Console
+              </h2>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2">
+            <button onclick="openNewRegistrationDirect()" class="bg-[#143B5D] hover:bg-slate-800 text-white text-xs font-bold px-3.5 py-2 rounded-xl shadow-sm transition flex items-center gap-1.5">
+              <i class="fa-solid fa-user-plus"></i> + Add Family Record
+            </button>
+            <button onclick="exportApplicationsCSV()" class="bg-[#1A871C] hover:bg-emerald-800 text-white text-xs font-bold px-3.5 py-2 rounded-xl shadow-sm transition flex items-center gap-1.5">
+              <i class="fa-solid fa-file-csv"></i> Export CSV
+            </button>
+            <button onclick="exportApplicationsJSON()" class="bg-[#D87A22] hover:bg-amber-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl shadow-sm transition flex items-center gap-1.5">
+              <i class="fa-solid fa-download"></i> Backup JSON
+            </button>
+            <label class="cursor-pointer bg-white hover:bg-neutral-100 text-neutral-700 border border-neutral-300 text-xs font-bold px-3 py-2 rounded-xl transition flex items-center gap-1.5">
+              <i class="fa-solid fa-upload"></i> Import
+              <input type="file" accept=".json" onchange="importApplicationsJSON(event)" class="hidden" />
+            </label>
+            <button onclick="confirmResetDemoData()" class="bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 text-xs font-bold px-3 py-2 rounded-xl transition">
+              <i class="fa-solid fa-rotate"></i> Reset Demo
+            </button>
+            <button onclick="logoutAdmin()" class="bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 text-xs font-bold px-3 py-2 rounded-xl transition">
+              <i class="fa-solid fa-power-off"></i> Logout
+            </button>
+          </div>
+        </div>
+
+        <!-- Admin KPI Cards -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5">
+          <div class="bg-white/95 rounded-2xl p-4 shadow border border-white">
+            <span class="text-[11px] font-bold uppercase text-neutral-500">Total Families</span>
+            <div id="admKpiTotal" class="text-2xl font-black text-[#143B5D] mt-1">0</div>
+          </div>
+          <div class="bg-white/95 rounded-2xl p-4 shadow border border-white">
+            <span class="text-[11px] font-bold uppercase text-amber-700">Pending Review</span>
+            <div id="admKpiPending" class="text-2xl font-black text-[#D87A22] mt-1">0</div>
+          </div>
+          <div class="bg-white/95 rounded-2xl p-4 shadow border border-white">
+            <span class="text-[11px] font-bold uppercase text-emerald-700">Approved DBT</span>
+            <div id="admKpiApproved" class="text-2xl font-black text-[#1A871C] mt-1">0</div>
+          </div>
+          <div class="bg-white/95 rounded-2xl p-4 shadow border border-white">
+            <span class="text-[11px] font-bold uppercase text-rose-700">Rejected</span>
+            <div id="admKpiRejected" class="text-2xl font-black text-rose-600 mt-1">0</div>
+          </div>
+          <div class="bg-white/95 rounded-2xl p-4 shadow border border-white">
+            <span class="text-[11px] font-bold uppercase text-purple-700">Open Grievances</span>
+            <div id="admKpiGrievances" class="text-2xl font-black text-purple-700 mt-1">0</div>
+          </div>
+          <div class="bg-white/95 rounded-2xl p-4 shadow border border-white">
+            <span class="text-[11px] font-bold uppercase text-sky-800">Monthly DBT Outlay</span>
+            <div id="admKpiLiability" class="text-2xl font-black text-sky-800 mt-1">₹0</div>
+          </div>
+        </div>
+
+        <!-- Admin Filter & Search Bar -->
+        <div class="bg-white/95 rounded-2xl shadow p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3">
+          <div class="lg:col-span-4 relative">
+            <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-neutral-400 text-sm"></i>
+            <input type="text" id="adminSearchInput" oninput="renderAdminTable()" placeholder="Search Name, ID, Mobile, Aadhaar, Ration Card..." class="w-full pl-9 pr-3 py-2 rounded-xl border border-neutral-300 text-xs sm:text-sm focus:ring-2 focus:ring-[#143B5D] focus:outline-none" />
+          </div>
+          <div class="lg:col-span-3">
+            <select id="adminFilterStatus" onchange="renderAdminTable()" class="w-full rounded-xl border border-neutral-300 px-3 py-2 text-xs sm:text-sm bg-white">
+              <option value="ALL">All Verification Statuses</option>
+              <option value="Pending">Pending Verification</option>
+              <option value="Approved">Approved (DBT Active)</option>
+              <option value="Rejected">Rejected</option>
+            </select>
+          </div>
+          <div class="lg:col-span-3">
+            <select id="adminFilterTier" onchange="renderAdminTable()" class="w-full rounded-xl border border-neutral-300 px-3 py-2 text-xs sm:text-sm bg-white">
+              <option value="ALL">All Benefit Tiers (₹3,000 &amp; ₹2,000)</option>
+              <option value="3000">₹3,000 / Month (Graduates &amp; PG)</option>
+              <option value="2000">₹2,000 / Month (Other Youth)</option>
+            </select>
+          </div>
+          <div class="lg:col-span-2">
+            <select id="adminFilterDistrict" onchange="renderAdminTable()" class="w-full rounded-xl border border-neutral-300 px-3 py-2 text-xs sm:text-sm bg-white">
+              <option value="ALL">All Districts</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Applications Table -->
+        <div class="bg-white/95 rounded-3xl shadow-lg border border-white overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-xs sm:text-sm">
+              <thead>
+                <tr class="bg-[#143B5D] text-white">
+                  <th class="py-3.5 px-4 font-semibold">Applicant &amp; Family ID</th>
+                  <th class="py-3.5 px-3 font-semibold">Age, Ration &amp; UID</th>
+                  <th class="py-3.5 px-3 font-semibold">District &amp; Block/MC</th>
+                  <th class="py-3.5 px-3 font-semibold">Education &amp; DBT Tier</th>
+                  <th class="py-3.5 px-3 font-semibold">Bank &amp; IFSC</th>
+                  <th class="py-3.5 px-3 font-semibold">Status</th>
+                  <th class="py-3.5 px-4 font-semibold text-right">Officer Actions</th>
+                </tr>
+              </thead>
+              <tbody id="adminTableBody" class="divide-y divide-neutral-200"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Citizen Grievance Redressal Queue inside Admin Panel -->
+        <div class="bg-white/95 rounded-3xl shadow-lg border border-white p-6">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-neutral-200 pb-3 mb-4">
+            <div>
+              <h3 class="font-serif text-lg font-black text-[#1A1A1A] flex items-center gap-2">
+                <i class="fa-solid fa-comments text-[#D87A22]"></i> Citizen Claim Grievance Redressal Queue
+              </h3>
+              <p class="text-xs text-neutral-500">Respond to citizen grievances submitted via the Public Access Portal</p>
+            </div>
+          </div>
+          <div id="adminGrievanceContainer" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= MODAL 1: INSPECT / EDIT / VERIFY APPLICATION (ADMIN) ================= -->
+  <div id="adminInspectModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-3 sm:p-6 no-print">
+    <div class="bg-white rounded-3xl shadow-2xl border border-neutral-200 max-w-4xl w-full max-h-[92vh] flex flex-col overflow-hidden">
+      <div class="bg-[#143B5D] text-white px-6 py-4 flex items-center justify-between">
+        <div>
+          <span class="text-[11px] uppercase tracking-wider text-amber-300 font-bold">State Social Registry Verification File</span>
+          <h3 class="font-serif text-lg font-bold">Inspect &amp; Update Family / Yuva Shakti Record</h3>
+        </div>
+        <button onclick="closeAdminInspectModal()" class="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center text-white">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="p-6 overflow-y-auto space-y-5 flex-grow">
+        <input type="hidden" id="editAppId" />
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-5 items-center bg-neutral-50 p-4 rounded-2xl border border-neutral-200">
+          <div class="md:col-span-3 flex flex-col items-center">
+            <img id="editPhotoPreview" src="" alt="Applicant" class="w-24 h-28 rounded-xl object-cover border-2 border-[#D87A22] shadow" />
+            <span id="editAppIdBadge" class="mt-2 font-mono text-xs font-bold bg-[#143B5D] text-white px-2.5 py-0.5 rounded"></span>
+          </div>
+          <div class="md:col-span-9 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+            <div>
+              <label class="font-bold text-neutral-600">Applicant Name</label>
+              <input type="text" id="editName" class="w-full mt-1 rounded-lg border border-neutral-300 px-2.5 py-1.5 font-semibold" />
+            </div>
+            <div>
+              <label class="font-bold text-neutral-600">Guardian / Family Head</label>
+              <input type="text" id="editGuardian" class="w-full mt-1 rounded-lg border border-neutral-300 px-2.5 py-1.5" />
+            </div>
+            <div>
+              <label class="font-bold text-neutral-600">Mobile Number</label>
+              <input type="text" id="editMobile" maxlength="10" class="w-full mt-1 rounded-lg border border-neutral-300 px-2.5 py-1.5 font-mono" />
+            </div>
+            <div>
+              <label class="font-bold text-neutral-600">Date of Birth</label>
+              <input type="date" id="editDob" class="w-full mt-1 rounded-lg border border-neutral-300 px-2.5 py-1.5" />
+            </div>
+            <div>
+              <label class="font-bold text-neutral-600">Aadhaar No.</label>
+              <input type="text" id="editAadhaar" maxlength="12" class="w-full mt-1 rounded-lg border border-neutral-300 px-2.5 py-1.5 font-mono" />
+            </div>
+            <div>
+              <label class="font-bold text-neutral-600">Voter EPIC No.</label>
+              <input type="text" id="editEpic" class="w-full mt-1 rounded-lg border border-neutral-300 px-2.5 py-1.5 font-mono uppercase" />
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+          <div>
+            <label class="font-bold text-neutral-600">District</label>
+            <select id="editDistrict" onchange="populateBlocksForDistrict('editDistrict', 'editBlock')" class="w-full mt-1 rounded-lg border border-neutral-300 px-2.5 py-2 bg-white"></select>
+          </div>
+          <div>
+            <label class="font-bold text-neutral-600">Block / Municipality</label>
+            <select id="editBlock" class="w-full mt-1 rounded-lg border border-neutral-300 px-2.5 py-2 bg-white"></select>
+          </div>
+          <div>
+            <label class="font-bold text-neutral-600">GP / Ward No.</label>
+            <input type="text" id="editWard" class="w-full mt-1 rounded-lg border border-neutral-300 px-2.5 py-2" />
+          </div>
+          <div>
+            <label class="font-bold text-neutral-600">Highest Qualification</label>
+            <select id="editQualification" class="w-full mt-1 rounded-lg border border-neutral-300 px-2.5 py-2 bg-white font-semibold">
+              <option value="Graduate (BA/BSc/BCom/BTech/etc.)">Graduate (₹3,000/mo)</option>
+              <option value="Post Graduate & Above">Post Graduate &amp; Above (₹3,000/mo)</option>
+              <option value="Higher Secondary (12th)">Higher Secondary 12th (₹2,000/mo)</option>
+              <option value="ITI / Polytechnic Diploma">ITI / Diploma (₹2,000/mo)</option>
+              <option value="Madhyamik (10th)">Madhyamik 10th (₹2,000/mo)</option>
+            </select>
+          </div>
+          <div>
+            <label class="font-bold text-neutral-600">Annual Family Income (₹)</label>
+            <input type="number" id="editIncome" class="w-full mt-1 rounded-lg border border-neutral-300 px-2.5 py-2 font-mono" />
+          </div>
+          <div>
+            <label class="font-bold text-neutral-600">Ration Card Number</label>
+            <input type="text" id="editRation" class="w-full mt-1 rounded-lg border border-neutral-300 px-2.5 py-2 font-mono" />
+          </div>
+          <div>
+            <label class="font-bold text-neutral-600">Bank Name</label>
+            <input type="text" id="editBankName" class="w-full mt-1 rounded-lg border border-neutral-300 px-2.5 py-2" />
+          </div>
+          <div>
+            <label class="font-bold text-neutral-600">IFSC Code</label>
+            <input type="text" id="editIfsc" class="w-full mt-1 rounded-lg border border-neutral-300 px-2.5 py-2 font-mono uppercase" />
+          </div>
+          <div>
+            <label class="font-bold text-neutral-600">Account Number</label>
+            <input type="text" id="editAccountNo" class="w-full mt-1 rounded-lg border border-neutral-300 px-2.5 py-2 font-mono" />
+          </div>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+          <label class="block text-xs font-extrabold text-amber-900 uppercase mb-1">
+            <i class="fa-solid fa-pen-clip"></i> Official Nodal Officer / BDO Remarks
+          </label>
+          <textarea id="editRemarks" rows="2" class="w-full rounded-lg border border-amber-300 px-3 py-2 text-xs sm:text-sm bg-white focus:outline-none"></textarea>
+        </div>
+      </div>
+
+      <div class="bg-neutral-100 px-6 py-4 border-t border-neutral-200 flex flex-wrap items-center justify-between gap-3">
+        <button type="button" onclick="saveInspectionEdits(null)" class="bg-neutral-700 hover:bg-neutral-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition">
+          Save Edits Only
+        </button>
+        <div class="flex flex-wrap items-center gap-2">
+          <button type="button" onclick="saveInspectionEdits('Pending')" class="bg-[#D87A22] hover:bg-amber-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition">
+            Mark Pending
+          </button>
+          <button type="button" onclick="saveInspectionEdits('Rejected')" class="bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition">
+            Reject Claim
+          </button>
+          <button type="button" onclick="saveInspectionEdits('Approved')" class="bg-[#1A871C] hover:bg-emerald-800 text-white text-xs font-extrabold px-5 py-2.5 rounded-xl shadow transition">
+            Approve &amp; Activate DBT
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL 2: PRINTABLE RECEIPT & BHAROSA SMART CARD MODAL ================= -->
+  <div id="printPreviewModal" class="fixed inset-0 bg-black/75 backdrop-blur-sm z-50 hidden flex items-center justify-center p-3 sm:p-6 no-print">
+    <div class="bg-white rounded-3xl shadow-2xl border border-neutral-200 max-w-4xl w-full max-h-[92vh] flex flex-col overflow-hidden">
+      <div class="bg-[#143B5D] text-white px-6 py-4 flex flex-wrap items-center justify-between gap-2">
+        <div class="flex items-center gap-2.5">
+          <i class="fa-solid fa-print text-amber-300 text-xl"></i>
+          <div>
+            <h3 class="font-serif text-base sm:text-lg font-bold">Official Registry Slip &amp; Yuva Shakti Bharosa Card</h3>
+            <p class="text-xs text-sky-200">Government of West Bengal • Family Level Data Collection Portal</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <button onclick="switchPrintViewMode('receipt')" id="btnModeReceipt" class="bg-white/20 hover:bg-white/30 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition">
+            A4 Acknowledgement Slip
+          </button>
+          <button onclick="switchPrintViewMode('card')" id="btnModeCard" class="bg-[#D87A22] text-white text-xs font-extrabold px-3 py-1.5 rounded-lg transition">
+            Yuva Shakti Bharosa Card
+          </button>
+          <button onclick="window.print()" class="bg-[#1A871C] hover:bg-emerald-700 text-white text-xs font-extrabold px-4 py-1.5 rounded-lg shadow flex items-center gap-1.5">
+            <i class="fa-solid fa-print"></i> Print / Save PDF
+          </button>
+          <button onclick="closePrintPreviewModal()" class="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center text-white">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+      <div id="modalPreviewBody" class="p-6 overflow-y-auto bg-neutral-100 flex-grow"></div>
+    </div>
+  </div>
+
+  <!-- ================= DEDICATED PRINTABLE AREA ================= -->
+  <div id="printableArea" class="hidden print:block"></div>
+
+  <!-- ================= CUSTOM CONFIRMATION MODAL ================= -->
+  <div id="customConfirmModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 no-print">
+    <div class="bg-white rounded-2xl shadow-xl border border-neutral-200 max-w-md w-full p-6">
+      <div class="flex items-center gap-3 text-rose-600 mb-3">
+        <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+        <h3 id="confirmModalTitle" class="font-serif text-lg font-bold text-neutral-900">Confirm Action</h3>
+      </div>
+      <p id="confirmModalMessage" class="text-sm text-neutral-600"></p>
+      <div class="mt-6 flex items-center justify-end gap-2.5">
+        <button onclick="closeCustomConfirm()" class="px-4 py-2 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-700 text-xs font-bold">
+          Cancel
+        </button>
+        <button id="confirmModalBtn" class="px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold shadow">
+          Confirm
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TOAST NOTIFICATION CONTAINER ================= -->
+  <div id="toastContainer" class="fixed bottom-5 right-5 z-50 space-y-2 max-w-sm w-full pointer-events-none no-print"></div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-neutral-900/95 text-neutral-400 text-xs border-t border-white/10 py-6 px-4 text-center no-print">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div class="flex items-center gap-2 text-neutral-200 font-semibold">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#F48120]"></span>
+        <span>Government of West Bengal • Family Level Data Collection Portal (socialregistry.wb.gov.in)</span>
+      </div>
+      <div>
+        Helpline: <strong class="text-[#D87A22]">1800-345-0117 / 6292248888</strong>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       JAVASCRIPT ENGINE (DYNAMIC PORTAL + LOCALSTORAGE + GRIEVANCES + ADMIN)
+  ========================================================================== -->
+  <script>
+    const STORAGE_KEY = 'wb_yuvashakti_apps';
+    const GRIEVANCE_KEY = 'wb_socialregistry_grievances';
+    const REFERENCE_DATE = new Date('2026-10-17T16:00:00');
+    const WB_SEAL_URL = 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Seal_of_West_Bengal.svg/1280px-Seal_of_West_Bengal.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail';
+    const WB_SEAL_FALLBACK = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Seal_of_West_Bengal.svg/500px-Seal_of_West_Bengal.svg.png';
+
+    // Strict Administrative Nodal Credentials
+    const ADMIN_AUTH_ID = 'PSBZP';
+    const ADMIN_AUTH_PASS = 'Psbzp2017Asn';
+
+    let applications = [];
+    let grievances = [];
+    let loggedCitizenMobile = null;
+    let currentGeneratedOtp = null;
+    let isAdminAuthenticated = false;
+    let uploadedPhotoDataUrl = '';
+    let activePrintAppId = null;
+    let activePrintMode = 'card';
+    let sealClickCount = 0;
+    let sealClickTimer = null;
+
+    // Discreet Triple-Click on Top Seal to Open Administrative Login
+    function handleOfficialSealClick() {
+      sealClickCount++;
+      if (sealClickTimer) clearTimeout(sealClickTimer);
+      if (sealClickCount >= 3) {
+        sealClickCount = 0;
+        navigatePortal('admin');
+        return;
+      }
+      sealClickTimer = setTimeout(() => {
+        if (sealClickCount === 1) {
+          navigatePortal('landing');
+        }
+        sealClickCount = 0;
+      }, 350);
+    }
+
+    // Comprehensive West Bengal Districts & Cascading Blocks/Municipalities
+    const WB_DISTRICT_BLOCKS = {
+      "Paschim Bardhaman": [
+        "Durgapur Municipal Corporation",
+        "Asansol Municipal Corporation",
+        "Andal Block",
+        "Raniganj Block",
+        "Kanksa Block",
+        "Faridpur-Durgapur Block",
+        "Pandabeswar Block",
+        "Jamuria Block",
+        "Barabani Block",
+        "Salanpur Block"
+      ],
+      "Kolkata": [
+        "Kolkata Municipal Corporation - North",
+        "Kolkata Municipal Corporation - Central",
+        "Kolkata Municipal Corporation - South",
+        "KMC Borough-IV (Shyambazar)",
+        "KMC Borough-VIII (Ballygunge)",
+        "KMC Borough-XII (Jadavpur)"
+      ],
+      "Howrah": [
+        "Howrah Municipal Corporation",
+        "Bally Municipality",
+        "Uluberia Municipality",
+        "Domjur Block",
+        "Sankrail Block",
+        "Bagnan-I Block"
+      ],
+      "North 24 Parganas": [
+        "Bidhannagar Municipal Corporation",
+        "Barasat Municipality",
+        "Barrackpore Municipality",
+        "Madhyamgram Municipality",
+        "Habra-I Block",
+        "Rajarhat Block"
+      ],
+      "South 24 Parganas": [
+        "Rajpur Sonarpur Municipality",
+        "Baruipur Municipality",
+        "Diamond Harbour Municipality",
+        "Sonarpur Block",
+        "Canning-I Block"
+      ],
+      "Hooghly": [
+        "Chandanagar Municipal Corporation",
+        "Serampore Municipality",
+        "Chinsurah-Mogra Block",
+        "Singur Block",
+        "Arambagh Municipality"
+      ],
+      "Purba Bardhaman": [
+        "Bardhaman Municipality",
+        "Burdwan-I Block",
+        "Kalna Municipality",
+        "Katwa Municipality",
+        "Memari-I Block"
+      ],
+      "Darjeeling": [
+        "Siliguri Municipal Corporation",
+        "Darjeeling Municipality",
+        "Kurseong Municipality",
+        "Matigara Block",
+        "Naxalbari Block"
+      ],
+      "Nadia": [
+        "Krishnanagar Municipality",
+        "Kalyani Municipality",
+        "Ranaghat Municipality",
+        "Chakdaha Block"
+      ],
+      "Birbhum": [
+        "Bolpur Municipality",
+        "Suri Municipality",
+        "Rampurhat Municipality",
+        "Bolpur-Sriniketan Block"
+      ],
+      "Bankura": [
+        "Bankura Municipality",
+        "Bishnupur Municipality",
+        "Barjora Block",
+        "Khatra Block"
+      ],
+      "Purba Medinipur": [
+        "Haldia Municipality",
+        "Tamluk Municipality",
+        "Contai Municipality",
+        "Kolaghat Block"
+      ],
+      "Paschim Medinipur": [
+        "Medinipur Municipality",
+        "Kharagpur Municipality",
+        "Ghatal Municipality"
+      ],
+      "Murshidabad": [
+        "Baharampur Municipality",
+        "Jangipur Municipality",
+        "Kandi Municipality"
+      ],
+      "Malda": [
+        "English Bazar Municipality",
+        "Old Malda Municipality",
+        "Gazole Block"
+      ],
+      "Jalpaiguri": [
+        "Jalpaiguri Municipality",
+        "Dhupguri Municipality",
+        "Rajganj Block"
+      ]
+    };
+
+    function createInitialsAvatar(name, bgHex = '#D87A22') {
+      const parts = (name || 'WB').trim().split(/\s+/);
+      const initials = ((parts[0] ? parts[0][0] : 'W') + (parts[1] ? parts[1][0] : 'B')).toUpperCase();
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="160" height="190" viewBox="0 0 160 190">
+        <rect width="160" height="190" rx="16" fill="${bgHex}"/>
+        <circle cx="80" cy="70" r="34" fill="#ffffff" fill-opacity="0.22"/>
+        <text x="80" y="82" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="30" font-weight="800">${initials}</text>
+        <rect x="18" y="140" width="124" height="24" rx="6" fill="#ffffff"/>
+        <text x="80" y="156" text-anchor="middle" fill="#1A1A1A" font-family="Inter, sans-serif" font-size="10.5" font-weight="800">WB SOCIAL REGISTRY</text>
+      </svg>`;
+      return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+    }
+
+    function getDefaultSampleApplications() {
+      return [
+        {
+          id: "WBYS-2026-10421",
+          name: "Subhajit Chatterjee",
+          guardian: "Tapan Kumar Chatterjee",
+          gender: "Male",
+          category: "General",
+          dob: "1999-04-12",
+          age: 27,
+          mobile: "9832145670",
+          aadhaar: "648291034512",
+          epic: "WB1912845891",
+          rationType: "RKSY-I",
+          rationNo: "RKSY1-1904882310",
+          familyCount: 4,
+          district: "Paschim Bardhaman",
+          block: "Durgapur Municipal Corporation",
+          ward: "Ward No. 14, Benachity",
+          address: "42/A, Vidyasagar Pally, Benachity, Durgapur",
+          pin: "713213",
+          qualification: "Graduate (BA/BSc/BCom/BTech/etc.)",
+          university: "Kazi Nazrul University, Asansol",
+          passYear: "2021",
+          empBank: "EB2022WB88412",
+          income: 62000,
+          monthlyBenefit: 3000,
+          bankName: "State Bank of India (SBI)",
+          branch: "Durgapur City Centre Branch",
+          ifsc: "SBIN0009042",
+          accountNo: "38491029384",
+          status: "Approved",
+          submittedOn: "2026-10-04",
+          remarks: "Family Level Data & KNU Graduation verified by Durgapur MC Nodal Desk. NPCI DBT active for ₹3,000/month.",
+          photo: createInitialsAvatar("Subhajit Chatterjee", "#D87A22")
+        },
+        {
+          id: "WBYS-2026-10422",
+          name: "Moumita Mondal",
+          guardian: "Biswanath Mondal",
+          gender: "Female",
+          category: "SC",
+          dob: "2001-08-24",
+          age: 25,
+          mobile: "9434811209",
+          aadhaar: "774129803419",
+          epic: "WB1908471204",
+          rationType: "PHH",
+          rationNo: "PHH-1902341892",
+          familyCount: 5,
+          district: "Paschim Bardhaman",
+          block: "Asansol Municipal Corporation",
+          ward: "Ward No. 46, Burnpur Road",
+          address: "H.No. 18, Subhaspally, Burnpur, Asansol",
+          pin: "713304",
+          qualification: "Higher Secondary (12th)",
+          university: "WBCHSE",
+          passYear: "2019",
+          empBank: "EB2023WB41920",
+          income: 54000,
+          monthlyBenefit: 2000,
+          bankName: "Punjab National Bank (PNB)",
+          branch: "Asansol Hutton Road Branch",
+          ifsc: "PUNB0004220",
+          accountNo: "0422010293841",
+          status: "Approved",
+          submittedOn: "2026-10-06",
+          remarks: "Approved by Commissioner Desk, Asansol MC. Eligible under Tier-II (₹2,000/month).",
+          photo: createInitialsAvatar("Moumita Mondal", "#1A871C")
+        },
+        {
+          id: "WBYS-2026-10423",
+          name: "Arindam Banerjee",
+          guardian: "Debabrata Banerjee",
+          gender: "Male",
+          category: "General",
+          dob: "1996-11-05",
+          age: 29,
+          mobile: "8918234501",
+          aadhaar: "539012847610",
+          epic: "WB1910293847",
+          rationType: "RKSY-II",
+          rationNo: "RKSY2-198841209",
+          familyCount: 3,
+          district: "Paschim Bardhaman",
+          block: "Raniganj Block",
+          ward: "Ballavpur Gram Panchayat",
+          address: "Vill & PO Ballavpur, Near Raniganj Bazar",
+          pin: "713323",
+          qualification: "Post Graduate & Above",
+          university: "University of Burdwan",
+          passYear: "2020",
+          empBank: "EB2021WB19384",
+          income: 72000,
+          monthlyBenefit: 3000,
+          bankName: "UCO Bank",
+          branch: "Raniganj NSB Road Branch",
+          ifsc: "UCBA0000412",
+          accountNo: "14920110048291",
+          status: "Pending",
+          submittedOn: "2026-10-14",
+          remarks: "Family data registered. Pending physical document verification at BDO Office, Raniganj.",
+          photo: createInitialsAvatar("Arindam Banerjee", "#143B5D")
+        },
+        {
+          id: "WBYS-2026-10424",
+          name: "Rina Murmu",
+          guardian: "Somnath Murmu",
+          gender: "Female",
+          category: "ST",
+          dob: "2002-02-19",
+          age: 24,
+          mobile: "7001928374",
+          aadhaar: "881920394812",
+          epic: "WB1919283746",
+          rationType: "AAY",
+          rationNo: "AAY-1900928371",
+          familyCount: 4,
+          district: "Paschim Bardhaman",
+          block: "Kanksa Block",
+          ward: "Trilokchandrapur GP",
+          address: "Panagarh Bazar, Kanksa, Paschim Bardhaman",
+          pin: "713148",
+          qualification: "ITI / Polytechnic Diploma",
+          university: "WBSCTVESD (Durgapur Govt Polytechnic)",
+          passYear: "2023",
+          empBank: "EB2024WB77291",
+          income: 48000,
+          monthlyBenefit: 2000,
+          bankName: "State Bank of India (SBI)",
+          branch: "Panagarh Bazar Branch",
+          ifsc: "SBIN0006142",
+          accountNo: "40918273645",
+          status: "Pending",
+          submittedOn: "2026-10-15",
+          remarks: "Social Registry AAY Ration verified. BDO Kanksa final digital signature awaited.",
+          photo: createInitialsAvatar("Rina Murmu", "#9a3412")
+        },
+        {
+          id: "WBYS-2026-10425",
+          name: "Saurav Dasgupta",
+          guardian: "Pradip Dasgupta",
+          gender: "Male",
+          category: "OBC-B",
+          dob: "1994-07-30",
+          age: 32,
+          mobile: "9051827364",
+          aadhaar: "419283746509",
+          epic: "WB0481920384",
+          rationType: "RKSY-I",
+          rationNo: "RKSY1-049182736",
+          familyCount: 3,
+          district: "Kolkata",
+          block: "KMC Borough-XII (Jadavpur)",
+          ward: "Ward No. 96, Jadavpur",
+          address: "112, Central Road, Jadavpur, Kolkata",
+          pin: "700032",
+          qualification: "Graduate (BA/BSc/BCom/BTech/etc.)",
+          university: "University of Calcutta",
+          passYear: "2016",
+          empBank: "EB2019WB55102",
+          income: 96000,
+          monthlyBenefit: 3000,
+          bankName: "Bandhan Bank",
+          branch: "Jadavpur 8B Bus Stand Branch",
+          ifsc: "BDBL0001048",
+          accountNo: "50190029384712",
+          status: "Rejected",
+          submittedOn: "2026-10-02",
+          remarks: "Rejected during NPCI cross-verification: Applicant found enrolled under regular EPFO payroll.",
+          photo: createInitialsAvatar("Saurav Dasgupta", "#475569")
+        }
+      ];
+    }
+
+    function getDefaultGrievances() {
+      return [
+        {
+          ticketId: "GRV-2026-801",
+          appRef: "WBYS-2026-10423",
+          name: "Arindam Banerjee",
+          category: "NPCI / Bank DBT Payment Pending",
+          message: "I have completed my NPCI Aadhaar seeding at UCO Bank Raniganj Branch on 14th Oct. Kindly expedite BDO verification.",
+          status: "Open",
+          submittedOn: "2026-10-15",
+          reply: "Awaiting BDO Raniganj field verification report."
+        },
+        {
+          ticketId: "GRV-2026-802",
+          appRef: "WBYS-2026-10421",
+          name: "Subhajit Chatterjee",
+          category: "Family Member / Ration Card Correction",
+          message: "Requesting update of Digital Ration Card category to RKSY-I in my Family Level Data profile.",
+          status: "Resolved",
+          submittedOn: "2026-10-08",
+          reply: "Resolved by Durgapur MC Verifier: RKSY-I number RKSY1-1904882310 updated in Social Registry."
+        }
+      ];
+    }
+
+    function calculateAgeFromDob(dobString) {
+      if (!dobString) return 0;
+      const dob = new Date(dobString);
+      let age = REFERENCE_DATE.getFullYear() - dob.getFullYear();
+      const m = REFERENCE_DATE.getMonth() - dob.getMonth();
+      if (m < 0 || (m === 0 && REFERENCE_DATE.getDate() < dob.getDate())) {
+        age--;
+      }
+      return age;
+    }
+
+    function getBenefitAmountByQualification(qualification) {
+      if (!qualification) return 2000;
+      const q = qualification.toLowerCase();
+      if (q.includes('graduate') || q.includes('post graduate')) return 3000;
+      return 2000;
+    }
+
+    function loadDataFromStorage() {
+      try {
+        const rawApps = localStorage.getItem(STORAGE_KEY);
+        applications = rawApps ? JSON.parse(rawApps) : getDefaultSampleApplications();
+        if (!Array.isArray(applications) || applications.length === 0) {
+          applications = getDefaultSampleApplications();
+        }
+      } catch (e) {
+        applications = getDefaultSampleApplications();
+      }
+
+      try {
+        const rawGrv = localStorage.getItem(GRIEVANCE_KEY);
+        grievances = rawGrv ? JSON.parse(rawGrv) : getDefaultGrievances();
+        if (!Array.isArray(grievances)) grievances = getDefaultGrievances();
+      } catch (e) {
+        grievances = getDefaultGrievances();
+      }
+
+      saveDataToStorage();
+    }
+
+    function saveDataToStorage() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(applications));
+        localStorage.setItem(GRIEVANCE_KEY, JSON.stringify(grievances));
+      } catch (e) {
+        showToast('Storage warning: Could not write to localStorage.', 'error');
+      }
+      refreshAllCountersAndViews();
+    }
+
+    function refreshAllCountersAndViews() {
+      const total = applications.length;
+      const approved = applications.filter(a => a.status === 'Approved');
+      const pending = applications.filter(a => a.status === 'Pending');
+      const rejected = applications.filter(a => a.status === 'Rejected');
+      const openGrv = grievances.filter(g => g.status === 'Open');
+      const monthlyOutlay = approved.reduce((sum, a) => sum + (Number(a.monthlyBenefit) || 2000), 0);
+
+      // Update Admin KPIs only inside the protected Admin Console
+      const elTotal = document.getElementById('admKpiTotal');
+      if (elTotal) elTotal.textContent = total;
+      const elPending = document.getElementById('admKpiPending');
+      if (elPending) elPending.textContent = pending.length;
+      const elApproved = document.getElementById('admKpiApproved');
+      if (elApproved) elApproved.textContent = approved.length;
+      const elRejected = document.getElementById('admKpiRejected');
+      if (elRejected) elRejected.textContent = rejected.length;
+      const elGrv = document.getElementById('admKpiGrievances');
+      if (elGrv) elGrv.textContent = openGrv.length;
+      const elLiability = document.getElementById('admKpiLiability');
+      if (elLiability) elLiability.textContent = '₹' + monthlyOutlay.toLocaleString('en-IN');
+
+      renderCitizenGrievances();
+
+      if (isAdminAuthenticated) {
+        renderAdminTable();
+        renderAdminGrievances();
+      }
+    }
+
+    // Main View Router (Landing vs Citizen Portal vs Admin Portal)
+    function navigatePortal(viewName) {
+      const views = ['landing', 'citizen', 'admin'];
+      views.forEach(v => {
+        const el = document.getElementById('view-' + v);
+        if (el) {
+          if (v === viewName) el.classList.remove('hidden');
+          else el.classList.add('hidden');
+        }
+      });
+
+      // Highlight top breadcrumb pill
+      const pills = {
+        landing: document.getElementById('pill-landing'),
+        citizen: document.getElementById('pill-citizen')
+      };
+      Object.keys(pills).forEach(k => {
+        if (!pills[k]) return;
+        if (k === viewName) {
+          pills[k].className = 'px-3 py-1.5 rounded-full font-semibold transition bg-amber-100 text-[#D87A22] border border-amber-300 flex items-center gap-1.5';
+        } else {
+          pills[k].className = 'px-3 py-1.5 rounded-full font-semibold transition bg-neutral-100 text-neutral-700 hover:bg-amber-50 flex items-center gap-1.5';
+        }
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Open New Registration directly from Landing Card 3 or Top Pill
+    function openNewRegistrationDirect() {
+      navigatePortal('citizen');
+      document.getElementById('citizenLoginGate').classList.add('hidden');
+      document.getElementById('citizenDashboardWorkspace').classList.remove('hidden');
+      document.getElementById('loggedCitizenPhoneBadge').innerHTML = `<i class="fa-solid fa-file-signature"></i> New Enrollment Session`;
+      switchCitizenSubTab('apply');
+    }
+
+    // =========================================================================
+    // CITIZEN OTP LOGIN & SUB-TAB NAVIGATION
+    // =========================================================================
+    function sendCitizenPortalOtp() {
+      const mob = document.getElementById('citLoginMobile').value.trim();
+      if (!/^[6-9]\d{9}$/.test(mob)) {
+        showToast('Please enter a valid 10-digit mobile number.', 'error');
+        return;
+      }
+      currentGeneratedOtp = String(Math.floor(1000 + Math.random() * 9000));
+      document.getElementById('citOtpBox').classList.remove('hidden');
+      document.getElementById('citGeneratedOtpText').textContent = currentGeneratedOtp;
+      showToast(`OTP sent to +91-${mob}`, 'info');
+    }
+
+    function verifyCitizenPortalOtp(autoFill = false) {
+      if (autoFill && currentGeneratedOtp) {
+        document.getElementById('citOtpInput').value = currentGeneratedOtp;
+      }
+      const entered = document.getElementById('citOtpInput').value.trim();
+      if (!currentGeneratedOtp || entered !== currentGeneratedOtp) {
+        showToast('Invalid OTP. Please enter the 4-digit OTP code.', 'error');
+        return;
+      }
+      const mob = document.getElementById('citLoginMobile').value.trim();
+      completeCitizenLogin(mob);
+    }
+
+    function completeCitizenLogin(mobile) {
+      loggedCitizenMobile = mobile;
+      document.getElementById('loggedCitizenPhoneBadge').innerHTML = `<i class="fa-solid fa-circle-check"></i> +91-${mobile}`;
+      document.getElementById('citizenLoginGate').classList.add('hidden');
+      document.getElementById('citizenDashboardWorkspace').classList.remove('hidden');
+      switchCitizenSubTab('status');
+      document.getElementById('trackSearchInput').value = mobile;
+      searchApplicationStatus();
+      renderCitizenGrievances();
+      showToast(`Logged in to Citizen Portal (+91-${mobile})`, 'success');
+    }
+
+    function logoutCitizenPortal() {
+      loggedCitizenMobile = null;
+      currentGeneratedOtp = null;
+      document.getElementById('citLoginMobile').value = '';
+      document.getElementById('citOtpInput').value = '';
+      document.getElementById('trackSearchInput').value = '';
+      document.getElementById('trackResultContainer').innerHTML = '';
+      document.getElementById('citizenDashboardWorkspace').classList.add('hidden');
+      document.getElementById('citizenLoginGate').classList.remove('hidden');
+      document.getElementById('citOtpBox').classList.add('hidden');
+      showToast('Logged out of Citizen Portal.', 'info');
+    }
+
+    function switchCitizenSubTab(subTab) {
+      const tabs = ['status', 'apply', 'grievance'];
+      tabs.forEach(t => {
+        const panel = document.getElementById('cit-sub-' + t);
+        const btn = document.getElementById('csub-' + t);
+        if (t === subTab) {
+          panel.classList.remove('hidden');
+          btn.className = 'px-4 py-2.5 rounded-xl text-xs font-bold transition bg-[#D87A22] text-white shadow flex items-center gap-1.5';
+        } else {
+          panel.classList.add('hidden');
+          btn.className = 'px-4 py-2.5 rounded-xl text-xs font-bold transition bg-white text-neutral-800 hover:bg-amber-50 flex items-center gap-1.5';
+        }
+      });
+    }
+
+    // Initialize District Dropdowns
+    function initializeDistrictSelectors() {
+      const districts = Object.keys(WB_DISTRICT_BLOCKS);
+      const citLoginDist = document.getElementById('citLoginDistrict');
+      const appDist = document.getElementById('appDistrict');
+      const editDist = document.getElementById('editDistrict');
+      const adminFilterDist = document.getElementById('adminFilterDistrict');
+
+      citLoginDist.innerHTML = '';
+      appDist.innerHTML = '';
+      editDist.innerHTML = '';
+      adminFilterDist.innerHTML = '<option value="ALL">All Districts</option>';
+
+      districts.forEach(d => {
+        citLoginDist.innerHTML += `<option value="${d}">${d}</option>`;
+        appDist.innerHTML += `<option value="${d}">${d}</option>`;
+        editDist.innerHTML += `<option value="${d}">${d}</option>`;
+        adminFilterDist.innerHTML += `<option value="${d}">${d}</option>`;
+      });
+
+      populateBlocksForDistrict('appDistrict', 'appBlock');
+      populateBlocksForDistrict('editDistrict', 'editBlock');
+    }
+
+    function populateBlocksForDistrict(districtSelectId, blockSelectId, selectedBlock = null) {
+      const distVal = document.getElementById(districtSelectId).value;
+      const blockSelect = document.getElementById(blockSelectId);
+      const blocks = WB_DISTRICT_BLOCKS[distVal] || ['Municipal / Block Area'];
+      blockSelect.innerHTML = '';
+      blocks.forEach(b => {
+        const isSel = selectedBlock && selectedBlock === b ? 'selected' : '';
+        blockSelect.innerHTML += `<option value="${b}" ${isSel}>${b}</option>`;
+      });
+    }
+
+    // =========================================================================
+    // 6-SECTION APPLICATION FORM VALIDATION & SUBMISSION
+    // =========================================================================
+    function validateFormAge() {
+      const dob = document.getElementById('appDob').value;
+      const badge = document.getElementById('ageValidationBadge');
+      if (!dob) {
+        badge.className = 'mt-1 text-[11px] font-semibold text-neutral-500';
+        badge.textContent = 'Select DOB to verify 21–45 yrs age limit';
+        return false;
+      }
+      const age = calculateAgeFromDob(dob);
+      if (age >= 21 && age <= 45) {
+        badge.className = 'mt-1 text-[11px] font-bold text-[#1A871C]';
+        badge.innerHTML = `<i class="fa-solid fa-circle-check"></i> Age: ${age} Years (Eligible 21–45 Yrs)`;
+        return true;
+      } else {
+        badge.className = 'mt-1 text-[11px] font-bold text-rose-600';
+        badge.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> Age: ${age} Years (Must be 21–45 Yrs)`;
+        return false;
+      }
+    }
+
+    function validateFormIncome() {
+      const inc = Number(document.getElementById('appIncome').value || 0);
+      const msg = document.getElementById('incomeValidationMsg');
+      if (inc > 0 && inc < 100000) {
+        msg.className = 'text-[11px] font-bold text-[#1A871C] mt-1';
+        msg.innerHTML = `<i class="fa-solid fa-check"></i> Eligible (< ₹1,00,000/yr)`;
+        return true;
+      } else {
+        msg.className = 'text-[11px] font-bold text-rose-600 mt-1';
+        msg.innerHTML = `<i class="fa-solid fa-xmark"></i> Must be below ₹1,00,000/yr`;
+        return false;
+      }
+    }
+
+    function updateFormStipendPreview() {
+      const qual = document.getElementById('appQualification').value;
+      const monthly = getBenefitAmountByQualification(qual);
+      const tierBadge = document.getElementById('stipendTierBadge');
+      const monthlyText = document.getElementById('stipendMonthlyText');
+      const annualText = document.getElementById('stipendAnnualText');
+
+      if (monthly === 3000) {
+        tierBadge.textContent = 'Graduate Tier-I';
+        monthlyText.innerHTML = '₹3,000 <span class="text-sm font-normal">/ Month</span>';
+        annualText.textContent = '₹36,000 / Year via NPCI DBT';
+      } else {
+        tierBadge.textContent = 'Other Youth Tier-II';
+        monthlyText.innerHTML = '₹2,000 <span class="text-sm font-normal">/ Month</span>';
+        annualText.textContent = '₹24,000 / Year via NPCI DBT';
+      }
+    }
+
+    function handlePhotoUpload(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const img = new Image();
+        img.onload = function() {
+          const canvas = document.createElement('canvas');
+          canvas.width = 180;
+          canvas.height = 220;
+          const ctx = canvas.getContext('2d');
+          ctx.fillStyle = '#ffffff';
+          ctx.fillRect(0, 0, 180, 220);
+          ctx.drawImage(img, 0, 0, 180, 220);
+          uploadedPhotoDataUrl = canvas.toDataURL('image/jpeg', 0.78);
+          const preview = document.getElementById('photoPreviewImg');
+          preview.src = uploadedPhotoDataUrl;
+          preview.classList.remove('hidden');
+          document.getElementById('photoPlaceholder').classList.add('hidden');
+          showToast('Applicant photo uploaded!', 'success');
+        };
+        img.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function resetApplicationForm() {
+      document.getElementById('yuvaShaktiForm').reset();
+      uploadedPhotoDataUrl = '';
+      document.getElementById('photoPreviewImg').classList.add('hidden');
+      document.getElementById('photoPlaceholder').classList.remove('hidden');
+      populateBlocksForDistrict('appDistrict', 'appBlock');
+      updateFormStipendPreview();
+      validateFormAge();
+    }
+
+    function handleApplicationSubmit(event) {
+      event.preventDefault();
+      if (!validateFormAge()) {
+        showToast('Applicant age must be between 21 and 45 years.', 'error');
+        return;
+      }
+      if (!validateFormIncome()) {
+        showToast('Annual Family Income must be below ₹1,00,000.', 'error');
+        return;
+      }
+
+      const name = document.getElementById('appName').value.trim();
+      const dob = document.getElementById('appDob').value;
+      const age = calculateAgeFromDob(dob);
+      const qualification = document.getElementById('appQualification').value;
+      const monthlyBenefit = getBenefitAmountByQualification(qualification);
+      const newAppId = `WBYS-2026-${Math.floor(10500 + Math.random() * 89000)}`;
+
+      const newApp = {
+        id: newAppId,
+        name: name,
+        guardian: document.getElementById('appGuardian').value.trim(),
+        gender: document.getElementById('appGender').value,
+        category: document.getElementById('appCategory').value,
+        dob: dob,
+        age: age,
+        mobile: document.getElementById('appMobile').value.trim(),
+        aadhaar: document.getElementById('appAadhaar').value.trim(),
+        epic: document.getElementById('appEpic').value.trim().toUpperCase(),
+        rationType: document.getElementById('appRationType').value,
+        rationNo: document.getElementById('appRationNo').value.trim().toUpperCase(),
+        familyCount: Number(document.getElementById('appFamilyCount').value || 4),
+        district: document.getElementById('appDistrict').value,
+        block: document.getElementById('appBlock').value,
+        ward: document.getElementById('appWard').value.trim(),
+        address: document.getElementById('appAddress').value.trim(),
+        pin: document.getElementById('appPin').value.trim(),
+        qualification: qualification,
+        university: document.getElementById('appUniversity').value.trim(),
+        passYear: document.getElementById('appPassYear').value,
+        empBank: document.getElementById('appEmpBank').value.trim().toUpperCase(),
+        income: Number(document.getElementById('appIncome').value),
+        monthlyBenefit: monthlyBenefit,
+        bankName: document.getElementById('appBankName').value,
+        branch: document.getElementById('appBranch').value.trim(),
+        ifsc: document.getElementById('appIfsc').value.trim().toUpperCase(),
+        accountNo: document.getElementById('appAccountNo').value.trim(),
+        status: 'Pending',
+        submittedOn: '2026-10-17',
+        remarks: 'Submitted online via Family Level Data Collection Portal. Pending BDO/Municipal verification.',
+        photo: uploadedPhotoDataUrl || createInitialsAvatar(name, '#D87A22')
+      };
+
+      applications.unshift(newApp);
+      loggedCitizenMobile = newApp.mobile;
+      saveDataToStorage();
+      resetApplicationForm();
+
+      switchCitizenSubTab('status');
+      document.getElementById('trackSearchInput').value = newAppId;
+      searchApplicationStatus();
+      openPrintPreviewModal(newAppId, 'receipt');
+      showToast(`Application Submitted! ID: ${newAppId}`, 'success');
+    }
+
+    // =========================================================================
+    // CHECK STATUS & GRIEVANCE SYSTEM
+    // =========================================================================
+    function searchApplicationStatus() {
+      const q = (document.getElementById('trackSearchInput').value || '').trim().toLowerCase();
+      const container = document.getElementById('trackResultContainer');
+      if (!q) {
+        showToast('Enter an Application ID, Mobile Number, or Aadhaar Number.', 'error');
+        return;
+      }
+
+      const found = applications.find(a =>
+        a.id.toLowerCase() === q ||
+        a.mobile.toLowerCase() === q ||
+        a.aadhaar.toLowerCase() === q
+      );
+
+      if (!found) {
+        container.innerHTML = `
+          <div class="portal-glass-card p-8 text-center">
+            <i class="fa-solid fa-circle-exclamation text-3xl text-rose-600 mb-2"></i>
+            <h4 class="font-serif text-lg font-bold">No Application Record Found</h4>
+            <p class="text-xs text-neutral-600 mt-1">No registered record matched "<strong>${q}</strong>". Please verify your Application ID, Mobile Number, or Aadhaar Number.</p>
+          </div>
+        `;
+        return;
+      }
+
+      const isApproved = found.status === 'Approved';
+      const isRejected = found.status === 'Rejected';
+      const statusPill = isApproved
+        ? '<span class="bg-emerald-600 text-white px-3.5 py-1 rounded-full text-xs font-extrabold"><i class="fa-solid fa-circle-check"></i> APPROVED & DBT ACTIVE</span>'
+        : isRejected
+        ? '<span class="bg-rose-600 text-white px-3.5 py-1 rounded-full text-xs font-extrabold"><i class="fa-solid fa-circle-xmark"></i> REJECTED</span>'
+        : '<span class="bg-[#D87A22] text-white px-3.5 py-1 rounded-full text-xs font-extrabold"><i class="fa-solid fa-clock"></i> PENDING BDO VERIFICATION</span>';
+
+      container.innerHTML = `
+        <div class="bg-white/95 rounded-3xl shadow-xl border border-white overflow-hidden">
+          <div class="bg-[#143B5D] text-white px-6 py-4 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-3.5">
+              <img src="${found.photo}" alt="${found.name}" class="w-13 h-15 w-12 h-14 rounded-xl object-cover border-2 border-amber-400" />
+              <div>
+                <div class="text-xs text-amber-300 font-mono font-bold">${found.id} • Submitted: ${found.submittedOn}</div>
+                <h3 class="font-serif text-lg font-bold">${found.name}</h3>
+                <p class="text-xs text-sky-200">${found.block}, ${found.district} • Ration: ${found.rationType} (${found.rationNo})</p>
+              </div>
+            </div>
+            <div>${statusPill}</div>
+          </div>
+
+          <div class="p-6 space-y-6">
+            <!-- 4-Step Progress Tracker -->
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-3 text-xs">
+              <div class="p-3.5 rounded-2xl border-2 border-emerald-500 bg-emerald-50">
+                <div class="font-bold text-emerald-900 flex justify-between"><span>1. Family Data Filed</span><i class="fa-solid fa-check-circle text-emerald-600"></i></div>
+                <p class="text-[11px] text-emerald-700 mt-1">Mobile OTP &amp; 6-Sections Saved</p>
+              </div>
+              <div class="p-3.5 rounded-2xl border-2 border-emerald-500 bg-emerald-50">
+                <div class="font-bold text-emerald-900 flex justify-between"><span>2. Ration &amp; UID Sync</span><i class="fa-solid fa-check-circle text-emerald-600"></i></div>
+                <p class="text-[11px] text-emerald-700 mt-1">Matched with Khadya Sathi</p>
+              </div>
+              <div class="p-3.5 rounded-2xl border-2 ${isApproved ? 'border-emerald-500 bg-emerald-50' : isRejected ? 'border-rose-500 bg-rose-50' : 'border-amber-400 bg-amber-50'}">
+                <div class="font-bold flex justify-between"><span>3. BDO / SDO Scrutiny</span><i class="fa-solid ${isApproved ? 'fa-check-circle text-emerald-600' : isRejected ? 'fa-times-circle text-rose-600' : 'fa-spinner fa-spin text-amber-600'}"></i></div>
+                <p class="text-[11px] mt-1">${isApproved ? 'Verified & Sanctioned' : isRejected ? 'Claim Rejected' : 'At Verifying Officer Desk'}</p>
+              </div>
+              <div class="p-3.5 rounded-2xl border-2 ${isApproved ? 'border-emerald-500 bg-emerald-50' : 'border-neutral-200 bg-neutral-50'}">
+                <div class="font-bold flex justify-between"><span>4. Monthly DBT Credit</span><i class="fa-solid ${isApproved ? 'fa-indian-rupee-sign text-emerald-600' : 'fa-lock text-neutral-400'}"></i></div>
+                <p class="text-[11px] mt-1">${isApproved ? '₹' + found.monthlyBenefit.toLocaleString('en-IN') + '/mo Active' : 'Awaiting Approval'}</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-neutral-50 p-4 rounded-2xl border border-neutral-200 text-xs">
+              <div>
+                <span class="text-neutral-500 font-semibold">Education &amp; Monthly Benefit:</span>
+                <p class="font-bold text-neutral-900 mt-0.5">${found.qualification}</p>
+                <p class="font-extrabold text-[#1A871C] mt-0.5">₹${found.monthlyBenefit.toLocaleString('en-IN')} / Month (₹${(found.monthlyBenefit * 12).toLocaleString('en-IN')}/Yr)</p>
+              </div>
+              <div>
+                <span class="text-neutral-500 font-semibold">NPCI DBT Bank Account:</span>
+                <p class="font-bold text-neutral-900 mt-0.5">${found.bankName} (${found.branch})</p>
+                <p class="font-mono text-neutral-700 mt-0.5">A/C: ****${String(found.accountNo).slice(-4)} | IFSC: ${found.ifsc}</p>
+              </div>
+              <div>
+                <span class="text-neutral-500 font-semibold">Official Nodal Remarks:</span>
+                <p class="font-semibold text-neutral-800 mt-0.5">${found.remarks}</p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-neutral-200">
+              <button onclick="prefillGrievanceForApp('${found.id}', '${found.name}')" class="text-xs font-bold text-[#D87A22] hover:underline flex items-center gap-1.5">
+                <i class="fa-solid fa-headset"></i> Have an issue with this record? File Claim Grievance →
+              </button>
+              <div class="flex flex-wrap gap-2.5">
+                <button onclick="openPrintPreviewModal('${found.id}', 'receipt')" class="bg-[#143B5D] hover:bg-slate-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow transition flex items-center gap-2">
+                  <i class="fa-solid fa-file-invoice"></i> Print A4 Receipt
+                </button>
+                <button onclick="openPrintPreviewModal('${found.id}', 'card')" class="bg-[#D87A22] hover:bg-amber-700 text-white text-xs font-extrabold px-4 py-2.5 rounded-xl shadow transition flex items-center gap-2">
+                  <i class="fa-solid fa-id-card"></i> Download Yuva Shakti Bharosa Card
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function prefillGrievanceForApp(appId, name) {
+      switchCitizenSubTab('grievance');
+      document.getElementById('grvAppRef').value = appId;
+      document.getElementById('grvName').value = name;
+    }
+
+    function handleGrievanceSubmit(event) {
+      event.preventDefault();
+      const newTicket = {
+        ticketId: `GRV-2026-${Math.floor(810 + Math.random() * 900)}`,
+        appRef: document.getElementById('grvAppRef').value.trim(),
+        name: document.getElementById('grvName').value.trim(),
+        category: document.getElementById('grvCategory').value,
+        message: document.getElementById('grvMessage').value.trim(),
+        status: 'Open',
+        submittedOn: '2026-10-17',
+        reply: 'Forwarded to BDO / SDO Nodal Verification Officer for resolution.'
+      };
+      grievances.unshift(newTicket);
+      saveDataToStorage();
+      event.target.reset();
+      showToast(`Claim Grievance Filed! Ticket: ${newTicket.ticketId}`, 'success');
+    }
+
+    function renderCitizenGrievances() {
+      const list = document.getElementById('citizenGrievanceList');
+      const badge = document.getElementById('citGrievanceCountBadge');
+      if (!list) return;
+
+      // Only show grievances belonging to the logged-in citizen (no internal leak)
+      const myApps = loggedCitizenMobile
+        ? applications.filter(a => a.mobile === loggedCitizenMobile).map(a => a.id.toLowerCase())
+        : [];
+      const visibleGrievances = loggedCitizenMobile
+        ? grievances.filter(g =>
+            g.appRef.toLowerCase() === loggedCitizenMobile.toLowerCase() ||
+            myApps.includes(g.appRef.toLowerCase())
+          )
+        : [];
+
+      badge.textContent = `${visibleGrievances.length} Tickets`;
+
+      if (visibleGrievances.length === 0) {
+        list.innerHTML = `
+          <div class="bg-white/80 rounded-2xl p-6 border border-neutral-200 text-center text-xs text-neutral-500">
+            No claim grievances filed under your current session yet.
+          </div>
+        `;
+        return;
+      }
+
+      list.innerHTML = visibleGrievances.map(g => `
+        <div class="bg-white rounded-2xl p-4 border border-neutral-200 shadow-sm text-xs space-y-1.5">
+          <div class="flex items-center justify-between">
+            <span class="font-mono font-bold text-[#143B5D]">${g.ticketId} • Ref: ${g.appRef}</span>
+            <span class="px-2.5 py-0.5 rounded-full font-bold text-[10px] ${g.status === 'Resolved' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'}">${g.status}</span>
+          </div>
+          <div class="font-bold text-neutral-900">${g.category} — <span class="font-normal text-neutral-600">${g.name}</span></div>
+          <p class="text-neutral-700">${g.message}</p>
+          <div class="bg-neutral-50 p-2.5 rounded-xl border border-neutral-200 text-[11px] text-neutral-700">
+            <strong class="text-[#143B5D]">Official Nodal Response:</strong> ${g.reply}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // =========================================================================
+    // PRINTABLE A4 RECEIPT & SMART CARD
+    // =========================================================================
+    function openPrintPreviewModal(appId, mode = 'card') {
+      const app = applications.find(a => a.id === appId);
+      if (!app) return;
+      activePrintAppId = appId;
+      activePrintMode = mode;
+      document.getElementById('printPreviewModal').classList.remove('hidden');
+      renderPrintContent();
+    }
+
+    function closePrintPreviewModal() {
+      document.getElementById('printPreviewModal').classList.add('hidden');
+    }
+
+    function switchPrintViewMode(mode) {
+      activePrintMode = mode;
+      renderPrintContent();
+    }
+
+    function renderPrintContent() {
+      const app = applications.find(a => a.id === activePrintAppId);
+      if (!app) return;
+
+      const btnReceipt = document.getElementById('btnModeReceipt');
+      const btnCard = document.getElementById('btnModeCard');
+      if (activePrintMode === 'receipt') {
+        btnReceipt.className = 'bg-[#D87A22] text-white text-xs font-extrabold px-3 py-1.5 rounded-lg transition';
+        btnCard.className = 'bg-white/20 hover:bg-white/30 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition';
+      } else {
+        btnCard.className = 'bg-[#D87A22] text-white text-xs font-extrabold px-3 py-1.5 rounded-lg transition';
+        btnReceipt.className = 'bg-white/20 hover:bg-white/30 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition';
+      }
+
+      const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${encodeURIComponent(`WB-SOCIAL-REGISTRY|ID:${app.id}|NAME:${app.name}|STATUS:${app.status}|BENEFIT:Rs.${app.monthlyBenefit}`)}`;
+
+      let html = '';
+      if (activePrintMode === 'receipt') {
+        html = `
+          <div class="max-w-3xl mx-auto bg-white border-2 border-[#143B5D] rounded-2xl p-6 sm:p-8 shadow-sm relative overflow-hidden text-neutral-900">
+            <!-- Watermark Seal -->
+            <img src="${WB_SEAL_URL}" onerror="this.onerror=null;this.src='${WB_SEAL_FALLBACK}';" alt="Watermark" class="w-64 h-64 object-contain opacity-[0.06] absolute inset-0 m-auto pointer-events-none" />
+
+            <div class="flex items-center justify-between border-b-2 border-[#D87A22] pb-4 mb-5 relative z-10">
+              <div class="flex items-center gap-3.5">
+                <img src="${WB_SEAL_URL}" onerror="this.onerror=null;this.src='${WB_SEAL_FALLBACK}';" alt="WB Seal" class="w-14 h-14 object-contain" />
+                <div>
+                  <h2 class="text-lg font-extrabold text-[#D87A22] uppercase tracking-wider">Government of West Bengal</h2>
+                  <p class="text-xs font-bold text-[#143B5D]">Family Level Data Collection Portal &amp; Yuva Shakti Yojana (2026–27)</p>
+                  <p class="text-[11px] text-neutral-500">Official Application Acknowledgement Receipt</p>
+                </div>
+              </div>
+              <div class="text-right font-mono text-xs">
+                <div class="font-bold text-[#143B5D] text-sm">${app.id}</div>
+                <div class="text-neutral-500">Date: ${app.submittedOn}</div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-5 relative z-10 text-xs">
+              <div class="sm:col-span-3 flex flex-col items-center">
+                <img src="${app.photo}" alt="${app.name}" class="w-24 h-28 rounded-xl object-cover border-2 border-[#143B5D]" />
+                <img src="${qrUrl}" alt="QR" class="w-20 h-20 mt-3 border border-neutral-200 p-1 rounded" />
+              </div>
+              <div class="sm:col-span-9 grid grid-cols-2 gap-y-2.5 gap-x-4 border border-neutral-200 rounded-xl p-4 bg-neutral-50/70">
+                <div><span class="text-neutral-500">Applicant Name:</span><div class="font-bold text-sm">${app.name}</div></div>
+                <div><span class="text-neutral-500">Father / Guardian:</span><div class="font-semibold">${app.guardian}</div></div>
+                <div><span class="text-neutral-500">DOB &amp; Age:</span><div class="font-semibold">${app.dob} (${app.age} Yrs)</div></div>
+                <div><span class="text-neutral-500">Mobile Number:</span><div class="font-mono font-bold">+91-${app.mobile}</div></div>
+                <div><span class="text-neutral-500">District &amp; Block/MC:</span><div class="font-semibold">${app.district} — ${app.block}</div></div>
+                <div><span class="text-neutral-500">Digital Ration Card:</span><div class="font-mono font-semibold">${app.rationType} (${app.rationNo})</div></div>
+                <div><span class="text-neutral-500">Qualification:</span><div class="font-semibold">${app.qualification}</div></div>
+                <div><span class="text-neutral-500">Sanctioned DBT Tier:</span><div class="font-extrabold text-[#1A871C]">₹${app.monthlyBenefit.toLocaleString('en-IN')} / Month</div></div>
+                <div><span class="text-neutral-500">Bank &amp; IFSC:</span><div class="font-semibold">${app.bankName} (${app.ifsc})</div></div>
+                <div><span class="text-neutral-500">Current Status:</span><div class="font-extrabold uppercase text-[#143B5D]">${app.status}</div></div>
+              </div>
+            </div>
+
+            <div class="mt-5 pt-3 border-t border-neutral-200 flex items-center justify-between text-[11px] text-neutral-500 relative z-10">
+              <span>Nodal Remarks: ${app.remarks}</span>
+              <span class="font-bold text-[#143B5D]">System Generated • socialregistry.wb.gov.in</span>
+            </div>
+          </div>
+        `;
+      } else {
+        html = `
+          <div class="max-w-lg mx-auto bharosa-card-gradient text-white rounded-3xl p-6 shadow-2xl border-2 border-amber-300/80 relative overflow-hidden">
+            <div class="flex items-center justify-between border-b border-white/20 pb-3.5 mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-white p-1 flex items-center justify-center shadow">
+                  <img src="${WB_SEAL_URL}" onerror="this.onerror=null;this.src='${WB_SEAL_FALLBACK}';" alt="WB Seal" class="w-full h-full object-contain" />
+                </div>
+                <div>
+                  <div class="text-[10px] uppercase tracking-widest text-amber-300 font-extrabold">Government of West Bengal</div>
+                  <h3 class="font-serif text-base font-black leading-tight">YUVA SHAKTI BHAROSA CARD</h3>
+                  <div class="text-[10px] text-sky-200">State Social Registry • Bhorsha Karmasuchi</div>
+                </div>
+              </div>
+              <span class="bg-white text-[#143B5D] font-mono text-xs font-black px-2.5 py-1 rounded-lg shadow">${app.id}</span>
+            </div>
+
+            <div class="grid grid-cols-12 gap-4 items-center">
+              <div class="col-span-4 flex flex-col items-center">
+                <img src="${app.photo}" alt="${app.name}" class="w-24 h-28 rounded-xl object-cover border-2 border-amber-300 shadow-md bg-white" />
+                <span class="mt-2 px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase ${app.status === 'Approved' ? 'bg-emerald-500 text-white' : 'bg-amber-400 text-neutral-900'}">${app.status}</span>
+              </div>
+              <div class="col-span-8 space-y-1.5 text-xs">
+                <div><span class="text-amber-200 text-[10px] uppercase">Beneficiary Name</span><div class="font-bold text-base leading-snug">${app.name}</div></div>
+                <div class="grid grid-cols-2 gap-2">
+                  <div><span class="text-amber-200 text-[10px] uppercase">DOB / Age</span><div class="font-semibold">${app.dob} (${app.age}Y)</div></div>
+                  <div><span class="text-amber-200 text-[10px] uppercase">Mobile</span><div class="font-mono font-bold">+91-${app.mobile}</div></div>
+                </div>
+                <div><span class="text-amber-200 text-[10px] uppercase">District &amp; Block/MC</span><div class="font-semibold truncate">${app.block}, ${app.district}</div></div>
+                <div class="pt-1 flex items-center justify-between border-t border-white/20">
+                  <div>
+                    <span class="text-amber-200 text-[10px] uppercase block">Monthly DBT Allowance</span>
+                    <span class="text-xl font-black text-amber-300">₹${app.monthlyBenefit.toLocaleString('en-IN')} / Mo</span>
+                  </div>
+                  <img src="${qrUrl}" alt="QR" class="w-14 h-14 rounded-lg bg-white p-1" />
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      document.getElementById('modalPreviewBody').innerHTML = html;
+      document.getElementById('printableArea').innerHTML = html;
+    }
+
+    // =========================================================================
+    // ADMIN PORTAL LOGIC (STRICT AUTHENTICATION - ZERO HINTS)
+    // =========================================================================
+    function handleAdminLogin(event) {
+      event.preventDefault();
+      const u = document.getElementById('adminUser').value.trim();
+      const p = document.getElementById('adminPass').value;
+      if (u === ADMIN_AUTH_ID && p === ADMIN_AUTH_PASS) {
+        unlockAdminDashboard();
+      } else {
+        document.getElementById('adminPass').value = '';
+        showToast('Invalid Official User ID or Password. Access Denied.', 'error');
+      }
+    }
+
+    function unlockAdminDashboard() {
+      isAdminAuthenticated = true;
+      const role = document.getElementById('adminRoleSelect').value;
+      document.getElementById('adminActiveRoleBadge').textContent = role;
+      document.getElementById('adminLoginView').classList.add('hidden');
+      document.getElementById('adminDashboardView').classList.remove('hidden');
+      refreshAllCountersAndViews();
+      renderAdminTable();
+      renderAdminGrievances();
+      showToast(`Signed in as ${role}`, 'success');
+    }
+
+    function logoutAdmin() {
+      isAdminAuthenticated = false;
+      document.getElementById('adminUser').value = '';
+      document.getElementById('adminPass').value = '';
+      document.getElementById('adminDashboardView').classList.add('hidden');
+      document.getElementById('adminLoginView').classList.remove('hidden');
+      navigatePortal('landing');
+      showToast('Logged out of Administrative Portal.', 'info');
+    }
+
+    function renderAdminTable() {
+      const tbody = document.getElementById('adminTableBody');
+      if (!tbody) return;
+
+      const searchQ = (document.getElementById('adminSearchInput').value || '').trim().toLowerCase();
+      const statusFilter = document.getElementById('adminFilterStatus').value;
+      const tierFilter = document.getElementById('adminFilterTier').value;
+      const distFilter = document.getElementById('adminFilterDistrict').value;
+
+      const filtered = applications.filter(app => {
+        const matchesSearch = !searchQ ||
+          app.name.toLowerCase().includes(searchQ) ||
+          app.id.toLowerCase().includes(searchQ) ||
+          app.mobile.toLowerCase().includes(searchQ) ||
+          app.aadhaar.toLowerCase().includes(searchQ) ||
+          app.rationNo.toLowerCase().includes(searchQ);
+        const matchesStatus = statusFilter === 'ALL' || app.status === statusFilter;
+        const matchesTier = tierFilter === 'ALL' || String(app.monthlyBenefit) === tierFilter;
+        const matchesDist = distFilter === 'ALL' || app.district === distFilter;
+        return matchesSearch && matchesStatus && matchesTier && matchesDist;
+      });
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="7" class="py-8 text-center text-neutral-500">No family records match the current filter.</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = filtered.map(app => {
+        const badge = app.status === 'Approved'
+          ? '<span class="bg-emerald-100 text-emerald-800 border border-emerald-300 px-2.5 py-0.5 rounded-full text-xs font-bold">Approved</span>'
+          : app.status === 'Pending'
+          ? '<span class="bg-amber-100 text-amber-800 border border-amber-300 px-2.5 py-0.5 rounded-full text-xs font-bold">Pending</span>'
+          : '<span class="bg-rose-100 text-rose-800 border border-rose-300 px-2.5 py-0.5 rounded-full text-xs font-bold">Rejected</span>';
+
+        return `
+          <tr class="hover:bg-amber-50/40 transition">
+            <td class="py-3 px-4">
+              <div class="flex items-center gap-3">
+                <img src="${app.photo}" alt="${app.name}" class="w-10 h-12 rounded-lg object-cover border border-neutral-300 shrink-0" />
+                <div>
+                  <div class="font-bold text-neutral-900">${app.name}</div>
+                  <div class="font-mono text-xs font-bold text-[#D87A22]">${app.id}</div>
+                  <div class="text-[11px] text-neutral-500">+91-${app.mobile}</div>
+                </div>
+              </div>
+            </td>
+            <td class="py-3 px-3">
+              <div class="font-semibold">${app.age} Yrs (${app.gender})</div>
+              <div class="font-mono text-[11px] text-neutral-600">${app.rationType}: ${app.rationNo}</div>
+              <div class="font-mono text-[11px] text-neutral-500">UID: ****${String(app.aadhaar).slice(-4)}</div>
+            </td>
+            <td class="py-3 px-3">
+              <div class="font-bold text-neutral-800">${app.district}</div>
+              <div class="text-xs text-neutral-600">${app.block}</div>
+              <div class="text-[11px] text-neutral-500">${app.ward}</div>
+            </td>
+            <td class="py-3 px-3">
+              <div class="font-semibold">${app.qualification.split('(')[0]}</div>
+              <div class="font-extrabold text-[#1A871C]">₹${Number(app.monthlyBenefit).toLocaleString('en-IN')} / mo</div>
+              <div class="text-[11px] text-neutral-500">Inc: ₹${Number(app.income).toLocaleString('en-IN')}/yr</div>
+            </td>
+            <td class="py-3 px-3">
+              <div class="font-semibold">${app.bankName.split('(')[0]}</div>
+              <div class="font-mono text-xs text-neutral-600">${app.ifsc}</div>
+              <div class="font-mono text-[11px] text-neutral-500">A/C: ****${String(app.accountNo).slice(-4)}</div>
+            </td>
+            <td class="py-3 px-3">
+              ${badge}
+              <div class="text-[10px] text-neutral-400 mt-1 max-w-[140px] truncate" title="${app.remarks}">${app.remarks}</div>
+            </td>
+            <td class="py-3 px-4 text-right">
+              <div class="flex items-center justify-end gap-1.5">
+                <button onclick="openAdminInspectModal('${app.id}')" class="bg-[#143B5D] hover:bg-slate-800 text-white text-xs font-bold px-2.5 py-1.5 rounded-lg transition" title="Inspect & Edit">
+                  <i class="fa-solid fa-sliders"></i> Verify
+                </button>
+                <button onclick="quickChangeStatus('${app.id}', 'Approved')" class="bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs font-bold px-2 py-1.5 rounded-lg transition" title="Quick Approve">
+                  <i class="fa-solid fa-check"></i>
+                </button>
+                <button onclick="quickChangeStatus('${app.id}', 'Rejected')" class="bg-rose-100 hover:bg-rose-200 text-rose-800 text-xs font-bold px-2 py-1.5 rounded-lg transition" title="Quick Reject">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+                <button onclick="openPrintPreviewModal('${app.id}', 'card')" class="bg-amber-100 hover:bg-amber-200 text-amber-900 text-xs font-bold px-2 py-1.5 rounded-lg transition" title="Print Card">
+                  <i class="fa-solid fa-id-card"></i>
+                </button>
+                <button onclick="confirmDeleteApplication('${app.id}')" class="bg-neutral-100 hover:bg-rose-600 hover:text-white text-neutral-600 text-xs font-bold px-2 py-1.5 rounded-lg transition" title="Delete">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function renderAdminGrievances() {
+      const container = document.getElementById('adminGrievanceContainer');
+      if (!container) return;
+      container.innerHTML = grievances.map((g, idx) => `
+        <div class="rounded-2xl border ${g.status === 'Resolved' ? 'border-emerald-200 bg-emerald-50/40' : 'border-amber-200 bg-amber-50/50'} p-4 text-xs space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-mono font-bold text-[#143B5D]">${g.ticketId} • App/Mob: ${g.appRef}</span>
+            <span class="px-2.5 py-0.5 rounded-full font-bold ${g.status === 'Resolved' ? 'bg-emerald-600 text-white' : 'bg-[#D87A22] text-white'}">${g.status}</span>
+          </div>
+          <div class="font-bold text-neutral-900">${g.category} (${g.name})</div>
+          <p class="text-neutral-700">${g.message}</p>
+          <div class="flex gap-2 pt-1">
+            <input type="text" id="grvReplyInput-${idx}" value="${g.reply}" class="flex-grow rounded-lg border border-neutral-300 bg-white px-2.5 py-1.5 text-xs" />
+            <button onclick="resolveGrievanceTicket(${idx})" class="bg-[#1A871C] hover:bg-emerald-800 text-white font-bold px-3 py-1.5 rounded-lg shrink-0">
+              Resolve &amp; Reply
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function resolveGrievanceTicket(idx) {
+      const replyVal = document.getElementById(`grvReplyInput-${idx}`).value.trim();
+      if (!grievances[idx]) return;
+      grievances[idx].reply = replyVal || 'Resolved by BDO / Nodal Officer Desk.';
+      grievances[idx].status = 'Resolved';
+      saveDataToStorage();
+      showToast(`Grievance ${grievances[idx].ticketId} marked as Resolved!`, 'success');
+    }
+
+    function quickChangeStatus(appId, newStatus) {
+      const idx = applications.findIndex(a => a.id === appId);
+      if (idx === -1) return;
+      applications[idx].status = newStatus;
+      applications[idx].remarks = newStatus === 'Approved'
+        ? 'Approved by Nodal Verifying Officer. NPCI DBT Mandate Active.'
+        : 'Rejected by Verifying Officer during Social Registry cross-check.';
+      saveDataToStorage();
+      showToast(`Record ${appId} marked as ${newStatus}.`, 'success');
+    }
+
+    function openAdminInspectModal(appId) {
+      const app = applications.find(a => a.id === appId);
+      if (!app) return;
+      document.getElementById('editAppId').value = app.id;
+      document.getElementById('editAppIdBadge').textContent = app.id;
+      document.getElementById('editPhotoPreview').src = app.photo;
+      document.getElementById('editName').value = app.name;
+      document.getElementById('editGuardian').value = app.guardian;
+      document.getElementById('editMobile').value = app.mobile;
+      document.getElementById('editDob').value = app.dob;
+      document.getElementById('editAadhaar').value = app.aadhaar;
+      document.getElementById('editEpic').value = app.epic;
+      document.getElementById('editDistrict').value = app.district;
+      populateBlocksForDistrict('editDistrict', 'editBlock', app.block);
+      document.getElementById('editWard').value = app.ward;
+      document.getElementById('editQualification').value = app.qualification;
+      document.getElementById('editIncome').value = app.income;
+      document.getElementById('editRation').value = app.rationNo;
+      document.getElementById('editBankName').value = app.bankName;
+      document.getElementById('editIfsc').value = app.ifsc;
+      document.getElementById('editAccountNo').value = app.accountNo;
+      document.getElementById('editRemarks').value = app.remarks;
+      document.getElementById('adminInspectModal').classList.remove('hidden');
+    }
+
+    function closeAdminInspectModal() {
+      document.getElementById('adminInspectModal').classList.add('hidden');
+    }
+
+    function saveInspectionEdits(newStatusOrNull) {
+      const appId = document.getElementById('editAppId').value;
+      const idx = applications.findIndex(a => a.id === appId);
+      if (idx === -1) return;
+
+      const updatedQual = document.getElementById('editQualification').value;
+      const updatedDob = document.getElementById('editDob').value;
+
+      applications[idx].name = document.getElementById('editName').value.trim();
+      applications[idx].guardian = document.getElementById('editGuardian').value.trim();
+      applications[idx].mobile = document.getElementById('editMobile').value.trim();
+      applications[idx].dob = updatedDob;
+      applications[idx].age = calculateAgeFromDob(updatedDob);
+      applications[idx].aadhaar = document.getElementById('editAadhaar').value.trim();
+      applications[idx].epic = document.getElementById('editEpic').value.trim().toUpperCase();
+      applications[idx].district = document.getElementById('editDistrict').value;
+      applications[idx].block = document.getElementById('editBlock').value;
+      applications[idx].ward = document.getElementById('editWard').value.trim();
+      applications[idx].qualification = updatedQual;
+      applications[idx].monthlyBenefit = getBenefitAmountByQualification(updatedQual);
+      applications[idx].income = Number(document.getElementById('editIncome').value || 0);
+      applications[idx].rationNo = document.getElementById('editRation').value.trim().toUpperCase();
+      applications[idx].bankName = document.getElementById('editBankName').value.trim();
+      applications[idx].ifsc = document.getElementById('editIfsc').value.trim().toUpperCase();
+      applications[idx].accountNo = document.getElementById('editAccountNo').value.trim();
+      applications[idx].remarks = document.getElementById('editRemarks').value.trim();
+
+      if (newStatusOrNull) applications[idx].status = newStatusOrNull;
+
+      saveDataToStorage();
+      closeAdminInspectModal();
+      showToast(`Application ${appId} updated!`, 'success');
+    }
+
+    function confirmDeleteApplication(appId) {
+      const app = applications.find(a => a.id === appId);
+      if (!app) return;
+      openCustomConfirm(
+        'Delete Family Record',
+        `Are you sure you want to delete application ${app.id} (${app.name}) from the Social Registry?`,
+        function() {
+          applications = applications.filter(a => a.id !== appId);
+          saveDataToStorage();
+          showToast(`Deleted record ${appId}.`, 'info');
+        }
+      );
+    }
+
+    function confirmResetDemoData() {
+      openCustomConfirm(
+        'Reset Demo Registry Data',
+        'Restore the default 5 West Bengal family applications and 2 sample citizen grievances?',
+        function() {
+          applications = getDefaultSampleApplications();
+          grievances = getDefaultGrievances();
+          saveDataToStorage();
+          showToast('Default West Bengal sample data restored!', 'success');
+        }
+      );
+    }
+
+    function openCustomConfirm(title, message, onConfirmCallback) {
+      document.getElementById('confirmModalTitle').textContent = title;
+      document.getElementById('confirmModalMessage').textContent = message;
+      const modal = document.getElementById('customConfirmModal');
+      const btn = document.getElementById('confirmModalBtn');
+      modal.classList.remove('hidden');
+      btn.onclick = function() {
+        closeCustomConfirm();
+        onConfirmCallback();
+      };
+    }
+
+    function closeCustomConfirm() {
+      document.getElementById('customConfirmModal').classList.add('hidden');
+    }
+
+    function exportApplicationsCSV() {
+      const headers = ['Application_ID','Name','Guardian','Gender','Category','DOB','Age','Mobile','Aadhaar','Ration_Type','Ration_No','District','Block','Ward','Qualification','Monthly_Benefit','Annual_Income','Bank','IFSC','Account_No','Status','Remarks'];
+      const rows = applications.map(a => [
+        a.id, a.name, a.guardian, a.gender, a.category, a.dob, a.age, a.mobile, a.aadhaar, a.rationType, a.rationNo, a.district, a.block, a.ward, a.qualification, a.monthlyBenefit, a.income, a.bankName, a.ifsc, a.accountNo, a.status, a.remarks
+      ].map(v => `"${String(v ?? '').replace(/"/g, '""')}"`).join(','));
+      const blob = new Blob([[headers.join(','), ...rows].join('\n')], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `WB_Social_Registry_YuvaShakti_${new Date().toISOString().slice(0,10)}.csv`;
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast('CSV exported!', 'success');
+    }
+
+    function exportApplicationsJSON() {
+      const blob = new Blob([JSON.stringify({ applications, grievances }, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `WB_Social_Registry_Backup_${new Date().toISOString().slice(0,10)}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast('JSON Backup downloaded!', 'success');
+    }
+
+    function importApplicationsJSON(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const parsed = JSON.parse(e.target.result);
+          if (Array.isArray(parsed)) {
+            applications = parsed;
+          } else if (parsed && Array.isArray(parsed.applications)) {
+            applications = parsed.applications;
+            if (Array.isArray(parsed.grievances)) grievances = parsed.grievances;
+          }
+          saveDataToStorage();
+          showToast('Registry database imported successfully!', 'success');
+        } catch (err) {
+          showToast('Invalid JSON file.', 'error');
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function showToast(message, type = 'info') {
+      const container = document.getElementById('toastContainer');
+      const colors = {
+        success: 'bg-[#1A871C] border-emerald-300 text-white',
+        error: 'bg-rose-700 border-rose-300 text-white',
+        info: 'bg-[#143B5D] border-amber-400 text-white'
+      };
+      const toast = document.createElement('div');
+      toast.className = `pointer-events-auto flex items-center gap-3 px-4 py-3 rounded-2xl shadow-xl border-l-4 text-xs sm:text-sm font-semibold transition-all ${colors[type] || colors.info}`;
+      toast.innerHTML = `<i class="fa-solid fa-circle-info"></i><span>${message}</span>`;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 300);
+      }, 3400);
+    }
+
+    window.onload = function() {
+      initializeDistrictSelectors();
+      loadDataFromStorage();
+      updateFormStipendPreview();
+      refreshAllCountersAndViews();
+    };
+  </script>
+</body>
+</html>
+>>>>>>> REPLACE
